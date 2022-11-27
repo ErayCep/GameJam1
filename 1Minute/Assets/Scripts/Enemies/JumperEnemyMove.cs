@@ -136,7 +136,7 @@ public class JumperEnemyMove : MonoBehaviour
 
         yerdemi =  Physics2D.OverlapCircle(ZeminPozisyonKontrol.position, ZeminCapKontrol, ZeminKatmanKontrol);
 
-        KarakterAnimator.SetBool("yerdemiymis", yerdemi);
+        KarakterAnimator.SetBool("isground", yerdemi);
     }
 
     void Modfonk()
