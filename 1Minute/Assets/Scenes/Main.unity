@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -246,12 +247,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4426293178f7a45779d2cf7b220468ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraBC: {fileID: 1731239604}
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fe3fc6f35f5ca4b948919baa2adb20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetCharacter: {fileID: 1609707595}
+  CameraSpeed: 0.07
 --- !u!1 &620875557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1101,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 9
   m_Material: {fileID: 6200000, guid: 66c49127085a1401a8d3caf8a2e95da3, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1100,7 +1115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551549078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.84, y: -5.75, z: 0}
+  m_LocalPosition: {x: -9.04, y: -5.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1136,7 +1151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609707594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.43, y: 4.74, z: 0}
+  m_LocalPosition: {x: 8.62, y: 4.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1160,7 +1175,7 @@ MonoBehaviour:
   rb: {fileID: 1551549079}
   moveSpeed: 10
   animator: {fileID: 1609707599}
-  jumpForce: 15
+  jumpForce: 28
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -1302,7 +1317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1731239604
 BoxCollider2D:
   m_ObjectHideFlags: 0
