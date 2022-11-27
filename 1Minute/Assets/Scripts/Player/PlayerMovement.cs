@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.J))
         {
             Fire();
+            animator.SetTrigger("isShot");
         }
     }
 
@@ -58,14 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     void SetAnimation()
     {
-        if(Mathf.Abs(moveInput.x) > 0)
-        {
-            animator.SetBool("isRunning", true);
-        }
-        else if(moveInput.x == 0)
-        {
-            animator.SetBool("isRunning", false);
-        }
+        animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
 
     void Jump()
