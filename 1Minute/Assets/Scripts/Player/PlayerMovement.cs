@@ -59,6 +59,9 @@ public class PlayerMovement : MonoBehaviour
             Fire();
             animator.SetTrigger("isShot");
         }
+
+
+
     }
 
     void Move()
@@ -125,13 +128,22 @@ public class PlayerMovement : MonoBehaviour
 
         {
             playerHealth = 0;
-
+           
         }
 
     }
 
 
-
+    /*
+        IEnumerator getInjure()
+        {
+      GetComponent<SpriteRenderer>().material.color = Color.red;
+              yield return new WaitForSeconds(1f);
+      GetComponent<SpriteRenderer>().material.color = Color.white;       
+   // Debug.Log("ah bu acýdý");
+        }
+    
+    */
 
 
 

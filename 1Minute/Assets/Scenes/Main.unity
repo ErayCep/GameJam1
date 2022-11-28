@@ -412,6 +412,7 @@ MonoBehaviour:
   enemyHealth: 100
   damageToPlayer: 20
   yokolma_time: 2
+  injurer: {fileID: 1435583363}
 --- !u!61 &542656160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1271,6 +1272,11 @@ Transform:
   m_Father: {fileID: 542656156}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1435583363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6499128965564339055, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_PrefabInstance: {fileID: 6499128966171337509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1609707595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6499128965564339054, guid: 462291b663fd949d69a827aa60a12b22, type: 3}

@@ -39,7 +39,8 @@ public class JumperEnemyMove : MonoBehaviour
 
     public float yokolma_time;
 
-
+    //Injuring
+   public GameObject injurer;
     void Start()
     {
      
@@ -86,9 +87,10 @@ public class JumperEnemyMove : MonoBehaviour
             isColliderBusy=true;
             collision.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
 
-
-          //  collision.GetComponent<moving>().enabled = false;
-          //  StartCoroutine(KarakterTepme_time(0f));
+      //     injurer.GetComponent<SpriteRenderer>().material.color = Color.red;
+        //    injurer.GetComponent<SpriteRenderer>().material.color = Color.white;
+            //  collision.GetComponent<moving>().enabled = false;
+            //  StartCoroutine(KarakterTepme_time(0f));
         }
 
     }
@@ -100,11 +102,17 @@ public class JumperEnemyMove : MonoBehaviour
         {
             isColliderBusy = false;
 
+          
             //collision.GetComponent<moving>().enabled = true;
         }
 
 
     }
+    
+    
+    
+    
+    
     public void getDamage(float damageToEnemy)
     {
         if (enemyHealth - damageToEnemy >= 0)
