@@ -25,6 +25,10 @@ public class PlayerMovement : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
+    //Teleport Shooting
+    private bool teleportFired;
+    private Transform teleportBulletTransform;
+    public GameObject teleportBullet;
 
     void Start()
     {
@@ -43,12 +47,12 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
-
-        if(Input.GetKeyDown(KeyCode.J))
-        {
-            Fire();
-            animator.SetTrigger("isShot");
-        }
+        TeleportFire();
+        //if(Input.GetKeyDown(KeyCode.J))
+        //{
+        //    Fire();
+        //    animator.SetTrigger("isShot");
+        //}
     }
 
     void Move()
@@ -85,5 +89,22 @@ public class PlayerMovement : MonoBehaviour
         GameObject bulletProjectile = Instantiate(bullet, firePoint.position, Quaternion.identity) as GameObject;
 
         Destroy(bulletProjectile, 2);
+    }
+
+    void TeleportFire()
+    {
+        if(teleportFired == false && Input.GetKeyDown(KeyCode.J))
+        {
+            teleportFired = true;
+            GameObject teleportProjectile = Instantiate(teleportBullet, firePoint.position, Quaternion.identity) as GameObject;
+            teleportBulletTransform = teleportProjectile.transform;
+
+            Destroy(teleportProjectile, 4);
+        }
+        else if(teleportFired == true && Input.GetKeyDown(KeyCode.J))
+        {
+            transform.position = new Vector3(teleportBulletTransform.transform.position.x, teleportBulletTransform.transform.position.y, transform.position.z);
+            teleportFired = false;
+        }
     }
 }
