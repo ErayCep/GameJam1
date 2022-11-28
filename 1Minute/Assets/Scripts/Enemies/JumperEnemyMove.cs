@@ -72,7 +72,7 @@ public class JumperEnemyMove : MonoBehaviour
 
        // death_jump();
         GetComponent<CapsuleCollider2D>().enabled = false;
-        GetComponent<Animator>().enabled = false;
+        //GetComponent<Animator>().enabled = false;
 
 
         yield return new WaitForSeconds(yokolma_time);
