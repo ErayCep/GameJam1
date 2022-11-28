@@ -30,6 +30,12 @@ public class PlayerMovement : MonoBehaviour
     private Transform teleportBulletTransform;
     public GameObject teleportBullet;
 
+    // Player Health
+    public float playerHealth;
+    public bool isDeath = false;
+
+
+
     void Start()
     {
         
@@ -43,16 +49,16 @@ public class PlayerMovement : MonoBehaviour
         SetAnimation();
         FlipSprite();
 
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             Jump();
         }
-        TeleportFire();
-        //if(Input.GetKeyDown(KeyCode.J))
-        //{
-        //    Fire();
-        //    animator.SetTrigger("isShot");
-        //}
+       // TeleportFire();
+        if(Input.GetKeyDown(KeyCode.J) ||Input.GetMouseButtonDown(0))     
+        {
+            Fire();
+            animator.SetTrigger("isShot");
+        }
     }
 
     void Move()
@@ -88,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameObject bulletProjectile = Instantiate(bullet, firePoint.position, Quaternion.identity) as GameObject;
 
-        Destroy(bulletProjectile, 2);
+        //Destroy(bulletProjectile, 2);
     }
 
     void TeleportFire()
@@ -107,4 +113,27 @@ public class PlayerMovement : MonoBehaviour
             teleportFired = false;
         }
     }
+
+    public void getDamage(float damageToPlayer)
+    {
+        if (playerHealth - damageToPlayer >= 0)
+
+        {
+            playerHealth -= damageToPlayer;
+        }
+        else
+
+        {
+            playerHealth = 0;
+
+        }
+
+    }
+
+
+
+
+
+
+
 }

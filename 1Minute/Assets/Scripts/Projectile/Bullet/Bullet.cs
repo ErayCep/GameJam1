@@ -8,6 +8,10 @@ public class Bullet : MonoBehaviour
     PlayerMovement player;
     public float bulletSpeed = 15f;
 
+    //Damage to Enemy
+    public float damageToEnemy;
+    bool isColliderBusy = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,4 +23,42 @@ public class Bullet : MonoBehaviour
     {
         
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy" && !isColliderBusy)
+
+        {
+            isColliderBusy=true;
+            collision.GetComponent<JumperEnemyMove>().getDamage(damageToEnemy);
+
+            Debug.Log("girdi mermi");
+
+
+        }
+
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        if (collision.tag == "Enemy")
+        {
+            isColliderBusy = false;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 }

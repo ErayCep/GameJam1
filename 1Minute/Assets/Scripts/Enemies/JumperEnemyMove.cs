@@ -9,12 +9,14 @@ public class JumperEnemyMove : MonoBehaviour
     Rigidbody2D ManRigidBody;
     Animator KarakterAnimator;
 
-    //public float tekrarx;
 
+
+    //Moving
+    
     public float harekethizi;
     public float ziplamahizi;
     public float death_jump_hiz;
-
+    //public float tekrarx;
     public bool yerdemi = false;
     public Transform ZeminPozisyonKontrol;
     public float ZeminCapKontrol;
@@ -26,49 +28,144 @@ public class JumperEnemyMove : MonoBehaviour
     public int modal1;
     public int modalsonuc;
 
-  //  public static dusmanhareket Cagir_dusman;
+    public bool isDead = false;
+
+
+    //Damage
+    public float enemyHealth;
+    public float damageToPlayer;
+    bool isColliderBusy = false;
+    private bool tek_kullanma = true;
+
+    public float yokolma_time;
+
+
     void Start()
     {
-       // Cagir_dusman = this;
+     
         ManRigidBody = GetComponent<Rigidbody2D>();
         KarakterAnimator = GetComponent<Animator>();
 
     }
+    //  D
+    //  A
+    //  M
+    //  A
+    //  G
+    //  E
+    void Update()
+    {
+
+        if (tek_kullanma & enemyHealth <= 0)
+        {
+            StartCoroutine(dusman_death_ziplayis(yokolma_time));
+            tek_kullanma = false;
+            isDead = true;
+
+            KarakterAnimator.SetBool("isDeadAnim", isDead);
+
+        }
+    }
+    IEnumerator dusman_death_ziplayis(float yokolma_time)
+    {
+      //  GetComponent<dusmanhareket>().enabled = false;
+
+       // death_jump();
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        GetComponent<Animator>().enabled = false;
 
 
+        yield return new WaitForSeconds(yokolma_time);
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" && !isColliderBusy)
+        {
+            isColliderBusy=true;
+            collision.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
+
+
+          //  collision.GetComponent<moving>().enabled = false;
+          //  StartCoroutine(KarakterTepme_time(0f));
+        }
+
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            isColliderBusy = false;
+
+            //collision.GetComponent<moving>().enabled = true;
+        }
+
+
+    }
+    public void getDamage(float damageToEnemy)
+    {
+        if (enemyHealth - damageToEnemy >= 0)
+
+        {
+            enemyHealth -= damageToEnemy;
+        }
+        else
+
+        {
+            enemyHealth = 0;
+           
+        }
+
+    }
+
+//  M
+//  O
+//  V
+//  I
+//  N
+//  G
     void FixedUpdate()
     {
 
         Modfonk();
 
-
-
-        if (yerdemi == false)
-        {
-            if (modalsonuc == 1)
-            {
-                ManRigidBody.velocity = new Vector2(1f * harekethizi, ManRigidBody.velocity.y);     //bu da oluyor//
-                                                                                                    // ManRigidBody.AddForce(new Vector2(tekrarx, 0f)); 
-            }
-            else if (modalsonuc == 0)
-            {
-
-                ManRigidBody.velocity = new Vector2(-1f * harekethizi, ManRigidBody.velocity.y);
-                //  ManRigidBody.AddForce(new Vector2(-tekrarx  , 0f));
-            }
-
-        }
-
-        else if (yerdemi)
+        if (!isDead)
         {
 
-            ManRigidBody.velocity = new Vector2(0f, ManRigidBody.velocity.y); //0f de farklý ManRigidBody.velocity.x
+            if (yerdemi == false)
+            {
+                if (modalsonuc == 1)
+                {
+                    ManRigidBody.velocity = new Vector2(1f * harekethizi, ManRigidBody.velocity.y);     //bu da oluyor//
+                                                                                                        // ManRigidBody.AddForce(new Vector2(tekrarx, 0f)); 
+                }
+                else if (modalsonuc == 0)
+                {
+
+                    ManRigidBody.velocity = new Vector2(-1f * harekethizi, ManRigidBody.velocity.y);
+                    //  ManRigidBody.AddForce(new Vector2(-tekrarx  , 0f));
+                }
+
+            }
+
+            else if (yerdemi)
+            {
+
+                ManRigidBody.velocity = new Vector2(0f, ManRigidBody.velocity.y); //0f de farklý ManRigidBody.velocity.x
+
+
+            }
+
 
 
         }
-
-
-
+        else 
+        {
+            death_jump();
+        }
 
         yerControl();
 

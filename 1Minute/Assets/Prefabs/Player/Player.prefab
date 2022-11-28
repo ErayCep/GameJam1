@@ -158,6 +158,9 @@ MonoBehaviour:
   groundCheck: {fileID: 6499128964651587190}
   firePoint: {fileID: 6499128966473771299}
   bullet: {fileID: 88653587212432459, guid: afcb8770a2e7d40cba0d6dec17a44a11, type: 3}
+  teleportBullet: {fileID: 0}
+  playerHealth: 100
+  isDeath: 0
 --- !u!95 &6499128965564339050
 Animator:
   serializedVersion: 4
@@ -209,7 +212,7 @@ Transform:
   m_Children:
   - {fileID: 6499128965564339054}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6499128965572256178
 Rigidbody2D:
