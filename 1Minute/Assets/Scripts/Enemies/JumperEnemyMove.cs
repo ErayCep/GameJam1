@@ -80,51 +80,53 @@ public class JumperEnemyMove : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player" && !isColliderBusy)
+    //    {
+    //        isColliderBusy=true;
+    //        collision.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
+
+    //  //     injurer.GetComponent<SpriteRenderer>().material.color = Color.red;
+    //    //    injurer.GetComponent<SpriteRenderer>().material.color = Color.white;
+    //        //  collision.GetComponent<moving>().enabled = false;
+    //        //  StartCoroutine(KarakterTepme_time(0f));
+    //    }
+
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Player" && !isColliderBusy)
+        if(collision.transform.tag == "Player" && !isColliderBusy)
         {
-            isColliderBusy=true;
-            collision.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
-
-            StartCoroutine(flashInjure());
-            
-            //  collision.GetComponent<moving>().enabled = false;
-            //  StartCoroutine(KarakterTepme_time(0f));
+            isColliderBusy = true;
+            collision.transform.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
         }
-
     }
 
 
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Player")
+    //    {
+    //        isColliderBusy = false;
 
-    private void OnTriggerExit2D(Collider2D collision)
+          
+    //        //collision.GetComponent<moving>().enabled = true;
+    //    }
+
+
+    //}
+
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.tag == "Player")
+        if(collision.transform.tag == "Player")
         {
             isColliderBusy = false;
-
-
-            //collision.GetComponent<moving>().enabled = true;
         }
-
-
     }
 
-    IEnumerator flashInjure()
-    {
-        injurer.GetComponent<SpriteRenderer>().material.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
 
-        injurer.GetComponent<SpriteRenderer>().material.color = Color.white;
-    
-     //   yield return new WaitForSeconds(1f);
-      
-        //injurer.GetComponent<SpriteRenderer>().material.color = Color.red;
-       // yield return new WaitForSeconds(0.2f);
-
-     // injurer.GetComponent<SpriteRenderer>().material.color = Color.white;
-
-    }
 
 
 
