@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.J) ||Input.GetMouseButtonDown(0) && standing.activeSelf)     
+        if( (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0) ) && standing.activeSelf)     
         {
             Fire();
             animator.SetTrigger("isShot");
