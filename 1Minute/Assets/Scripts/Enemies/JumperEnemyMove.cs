@@ -28,7 +28,7 @@ public class JumperEnemyMove : MonoBehaviour
     public int modal1;
     public int modalsonuc;
 
-    public bool isDead = false;
+    public bool isDeadEnemy = false;
 
 
     //Damage
@@ -61,9 +61,9 @@ public class JumperEnemyMove : MonoBehaviour
         {
             StartCoroutine(dusman_death_ziplayis(yokolma_time));
             tek_kullanma = false;
-            isDead = true;
+            isDeadEnemy = true;
 
-            KarakterAnimator.SetBool("isDeadAnim", isDead);
+            KarakterAnimator.SetBool("isDeadEnemyAnim", isDeadEnemy);
 
         }
     }
@@ -149,7 +149,7 @@ public class JumperEnemyMove : MonoBehaviour
 
         Modfonk();
 
-        if (!isDead)
+        if (!isDeadEnemy)
         {
 
             if (yerdemi == false)

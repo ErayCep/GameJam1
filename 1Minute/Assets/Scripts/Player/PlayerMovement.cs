@@ -58,9 +58,7 @@ public class PlayerMovement : MonoBehaviour
     {
         activeMoveSpeed = moveSpeed;
 
-        //parentObject = FindObjectOfType<>();
 
-        //DestroyObject()
 
 
     }
@@ -69,21 +67,13 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
-        if ( !isDead & playerHealth <= 0)
-        {
-            StartCoroutine(playerDeath(deathTime));
-         
-            isDead = true;
-
-            animator.SetBool("isDeadAnim", isDead);
-
-        }
+     
 
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
 
         Move();
-        FlipSprite();
+       // FlipSprite();
 
         if(ball.activeSelf)
         {
@@ -100,13 +90,24 @@ public class PlayerMovement : MonoBehaviour
             Jump();
         }
 
-        if( (Input.GetKeyDown(KeyCode.J) || Input.GetMouseButtonDown(0) ) && standing.activeSelf)     
+        if( Input.GetKeyDown(KeyCode.J) && standing.activeSelf)     
         {
             Fire();
             animator.SetTrigger("isShot");
         }
 
         TurnToBall();
+
+        if (!isDead & playerHealth <= 0)
+        {
+            StartCoroutine(playerDeath(deathTime));
+
+            isDead = true;
+
+            animator.SetBool("isDeadAnim", isDead);
+
+        }
+
 
     }
 
@@ -135,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = Vector2.up * jumpForce;
     }
 
-
+    /*
     void FlipSprite()
     {
         if(moveInput.x == 1)
@@ -148,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    */
     void Fire()
     {
         GameObject bulletProjectile = Instantiate(bullet, firePoint.position, Quaternion.identity) as GameObject;
