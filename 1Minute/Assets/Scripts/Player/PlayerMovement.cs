@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             Dash();
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) && isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }

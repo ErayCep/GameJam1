@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6499128964651587191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.78999996, y: 7.96, z: 0}
+  m_LocalPosition: {x: -0.14, y: -1.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43,9 +43,10 @@ GameObject:
   - component: {fileID: 6499128965564339051}
   - component: {fileID: 6499128965564339048}
   - component: {fileID: 6499128965564339050}
+  - component: {fileID: 1609707599}
   m_Layer: 7
   m_Name: Player Stand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,6 +154,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1609707599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6499128965564339055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8153d6331ff44f89190470e03530eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 6499128965572256178}
+  moveSpeed: 10
+  animator: {fileID: 6499128965564339050}
+  jumpForce: 28
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  groundCheck: {fileID: 6499128964651587190}
+  firePoint: {fileID: 6499128966473771299}
+  bullet: {fileID: 88653587212432459, guid: afcb8770a2e7d40cba0d6dec17a44a11, type: 3}
+  teleportBullet: {fileID: 88653587212432459, guid: 34c65b0e5647d4ce8b825c8de10e830b, type: 3}
+  playerHealth: 100
+  isDeath: 0
+  standing: {fileID: 6499128965564339055}
+  ball: {fileID: 6563979620454065786}
+  waitToBall: 0.5
+  ballAnimator: {fileID: 8874340435059145616}
+  ballBomb: {fileID: 0}
+  dashLength: 0.5
+  dashCooldown: 1
+  dashSpeed: 15
 --- !u!1 &6499128965572256179
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +197,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6499128965572256189}
   - component: {fileID: 6499128965572256178}
-  - component: {fileID: 2278811062116207283}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -211,35 +244,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2278811062116207283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6499128965572256179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8153d6331ff44f89190470e03530eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 6499128965572256178}
-  moveSpeed: 10
-  animator: {fileID: 6499128965564339050}
-  jumpForce: 28
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
-  groundCheck: {fileID: 6499128964651587190}
-  firePoint: {fileID: 6499128966473771299}
-  bullet: {fileID: 88653587212432459, guid: afcb8770a2e7d40cba0d6dec17a44a11, type: 3}
-  teleportBullet: {fileID: 88653587212432459, guid: 34c65b0e5647d4ce8b825c8de10e830b, type: 3}
-  playerHealth: 100
-  isDeath: 0
-  standing: {fileID: 6499128965564339055}
-  ball: {fileID: 6563979620454065786}
-  waitToBall: 0.5
-  ballAnimator: {fileID: 8874340435059145616}
 --- !u!1 &6499128966473771296
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6499128966473771296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7600002, y: 9.59, z: 0}
+  m_LocalPosition: {x: 1, y: 0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
