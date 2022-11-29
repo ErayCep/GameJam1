@@ -412,7 +412,7 @@ MonoBehaviour:
   enemyHealth: 100
   damageToPlayer: 20
   yokolma_time: 2
-  injurer: {fileID: 1435583363}
+  injurer: {fileID: 1441646270}
 --- !u!61 &542656160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1272,9 +1272,14 @@ Transform:
   m_Father: {fileID: 542656156}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1435583363 stripped
+--- !u!1 &1441646270 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6499128965564339055, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_PrefabInstance: {fileID: 6499128966171337509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1441646276 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1441646276, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
   m_PrefabInstance: {fileID: 6499128966171337509}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1609707595 stripped
@@ -1348,25 +1353,13 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6499128965564339049, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: playerHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965564339049, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: damageToEnemy
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965564339055, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 2278811062116207283, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1441646276}
     - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_RootOrder
@@ -1374,11 +1367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.04
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.61
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.z
