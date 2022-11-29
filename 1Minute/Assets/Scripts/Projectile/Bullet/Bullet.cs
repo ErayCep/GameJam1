@@ -5,7 +5,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     Rigidbody2D rb;
-    PlayerMovement player;
+
+    //PlayerMovement player;
+    ParentScript player;
+
     public float bulletSpeed = 15f;
 
     //Damage to Enemy
@@ -19,8 +22,13 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = FindObjectOfType<PlayerMovement>();
+        
+        //player = FindObjectOfType<PlayerMovement>();
+        //rb.velocity = Vector2.right * bulletSpeed * player.transform.localScale.x;
+
+        player = FindObjectOfType<ParentScript>();
         rb.velocity = Vector2.right * bulletSpeed * player.transform.localScale.x;
+
         enemy = FindObjectOfType<JumperEnemyMove>();
      //   enemySR = enemy.GetComponent<SpriteRenderer>();
     }
