@@ -147,4 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 15
-  damageToEnemy: 100
+  damageToEnemy: 20
+  injurerEnemy: {fileID: 0}

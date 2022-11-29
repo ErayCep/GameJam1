@@ -40,7 +40,7 @@ public class JumperEnemyMove : MonoBehaviour
     public float yokolma_time;
 
     //Injuring
-   public GameObject injurer;
+   public GameObject injurerPlayer;
     void Start()
     {
      
@@ -114,10 +114,10 @@ public class JumperEnemyMove : MonoBehaviour
 
     IEnumerator flashInjure()
     {
-        injurer.GetComponent<SpriteRenderer>().material.color = Color.red;
+        injurerPlayer.GetComponent<SpriteRenderer>().material.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         
-        injurer.GetComponent<SpriteRenderer>().material.color = Color.white;
+        injurerPlayer.GetComponent<SpriteRenderer>().material.color = Color.white;
 
     }
 

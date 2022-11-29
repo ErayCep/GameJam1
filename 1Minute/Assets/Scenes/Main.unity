@@ -412,7 +412,7 @@ MonoBehaviour:
   enemyHealth: 100
   damageToPlayer: 20
   yokolma_time: 2
-  injurer: {fileID: 1435583363}
+  injurerPlayer: {fileID: 1435583363}
 --- !u!61 &542656160
 BoxCollider2D:
   m_ObjectHideFlags: 0

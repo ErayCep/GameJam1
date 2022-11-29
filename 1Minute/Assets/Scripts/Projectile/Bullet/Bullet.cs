@@ -12,11 +12,17 @@ public class Bullet : MonoBehaviour
     public float damageToEnemy;
     bool isColliderBusy = false;
 
+    //Injure
+    public GameObject injurerEnemy;
+
+    JumperEnemyMove enemy;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<PlayerMovement>();
         rb.velocity = Vector2.right * bulletSpeed * player.transform.localScale.x;
+        enemy = FindObjectOfType<JumperEnemyMove>();
+     //   enemySR = enemy.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -33,9 +39,9 @@ public class Bullet : MonoBehaviour
             isColliderBusy=true;
             collision.GetComponent<JumperEnemyMove>().getDamage(damageToEnemy);
 
-            Debug.Log("girdi mermi");
+  
 
-
+            StartCoroutine(flashInjureEnemy());
         }
 
 
@@ -50,7 +56,14 @@ public class Bullet : MonoBehaviour
         }
     }
 
+    IEnumerator flashInjureEnemy()
+    {
+        enemy.GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.2f);
 
+        enemy.GetComponent<SpriteRenderer>().color = Color.white;
+
+    }
 
 
 
