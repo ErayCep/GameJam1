@@ -239,6 +239,7 @@ MonoBehaviour:
   standing: {fileID: 6499128965564339055}
   ball: {fileID: 6563979620454065786}
   waitToBall: 0.5
+  ballAnimator: {fileID: 8874340435059145616}
 --- !u!1 &6499128966473771296
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +282,7 @@ GameObject:
   - component: {fileID: 8655350997603783134}
   - component: {fileID: 3893662827484185531}
   - component: {fileID: 1259681688}
+  - component: {fileID: 8874340435059145616}
   m_Layer: 0
   m_Name: Player Ball
   m_TagString: Untagged
@@ -371,3 +373,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.04}
   serializedVersion: 2
   m_Radius: 0.45
+--- !u!95 &8874340435059145616
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563979620454065786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90d9dcee5d1aa4c30b74a42e56cb7708, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

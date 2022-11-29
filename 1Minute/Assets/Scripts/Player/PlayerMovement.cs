@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject standing, ball;
     public float waitToBall;
     private float ballCounter;
+    public Animator ballAnimator;
 
     void Start()
     {
@@ -49,8 +50,16 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
 
         Move();
-        SetAnimation();
         FlipSprite();
+
+        if(ball.activeSelf)
+        {
+            SetBallAnimation();
+        }
+        else if(standing.activeSelf)
+        {
+            SetStandingAnimation();
+        }
 
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
@@ -73,9 +82,14 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveSpeed * moveInput.x, rb.velocity.y);
     }
 
-    void SetAnimation()
+    void SetStandingAnimation()
     {
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
+    }
+
+    void SetBallAnimation()
+    {
+        ballAnimator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
 
     void Jump()
