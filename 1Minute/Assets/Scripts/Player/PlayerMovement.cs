@@ -34,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
     public float playerHealth;
     public bool isDeath = false;
 
-
+    //Ball values
+    public GameObject standing, ball;
+    public float waitToBall;
+    private float ballCounter;
 
     void Start()
     {
@@ -60,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("isShot");
         }
 
-
+        TurnToBall();
 
     }
 
@@ -117,6 +120,42 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void TurnToBall()
+    {
+        if(!ball.activeSelf)
+        {
+            if(Input.GetAxisRaw("Vertical") < -.9f)
+            {
+                ballCounter -= Time.deltaTime;
+                if(ballCounter <= 0)
+                {
+                    ball.SetActive(true);
+                    standing.SetActive(false);
+                }
+            }
+            else
+            {
+                ballCounter = waitToBall;
+            }
+        }
+        else
+        {
+            if(Input.GetAxisRaw("Vertical") > .9f)
+            {
+                ballCounter -= Time.deltaTime;
+                if(ballCounter <= 0)
+                {
+                    ball.SetActive(false);
+                    standing.SetActive(true);
+                }
+            }
+            else
+            {
+                ballCounter = waitToBall;
+            }
+        }
+    }
+
     public void getDamage(float damageToPlayer)
     {
         if (playerHealth - damageToPlayer >= 0)
@@ -140,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
       GetComponent<SpriteRenderer>().material.color = Color.red;
               yield return new WaitForSeconds(1f);
       GetComponent<SpriteRenderer>().material.color = Color.white;       
-   // Debug.Log("ah bu acýdý");
+   // Debug.Log("ah bu ac?d?");
         }
     
     */
