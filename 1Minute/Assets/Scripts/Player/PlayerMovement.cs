@@ -277,7 +277,7 @@ public class PlayerMovement : MonoBehaviour
 
         parentPlayer.GetComponent<Rigidbody2D>().gravityScale = 0f;
         GetComponent<CapsuleCollider2D>().enabled = false;
-        moveSpeed = 0f;
+        activeMoveSpeed = 0f;
 
 
         yield return new WaitForSeconds(deathTime);
