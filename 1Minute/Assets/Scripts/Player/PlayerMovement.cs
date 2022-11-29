@@ -39,10 +39,16 @@ public class PlayerMovement : MonoBehaviour
     public float waitToBall;
     private float ballCounter;
     public Animator ballAnimator;
+    public GameObject ballBomb;
+
+    //Dash Variables
+    private float activeMoveSpeed;
+    public float dashLength = 0.5f, dashCooldown = 1f, dashSpeed = 15f;
+    private float dashCoolCounter, timeSinceDash;
 
     void Start()
     {
-        
+        activeMoveSpeed = moveSpeed;
     }
 
     void Update()
@@ -59,14 +65,15 @@ public class PlayerMovement : MonoBehaviour
         else if(standing.activeSelf)
         {
             SetStandingAnimation();
+            Dash();
         }
 
         if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             Jump();
         }
-       // TeleportFire();
-        if(Input.GetKeyDown(KeyCode.J) ||Input.GetMouseButtonDown(0))     
+
+        if(Input.GetKeyDown(KeyCode.J) ||Input.GetMouseButtonDown(0) && standing.activeSelf)     
         {
             Fire();
             animator.SetTrigger("isShot");
@@ -79,24 +86,28 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(moveSpeed * moveInput.x, rb.velocity.y);
+        rb.velocity = new Vector2(activeMoveSpeed * moveInput.x, rb.velocity.y);
     }
+
 
     void SetStandingAnimation()
     {
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
 
+
     void SetBallAnimation()
     {
         ballAnimator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
+
 
     void Jump()
     {
         
         rb.velocity = Vector2.up * jumpForce;
     }
+
 
     void FlipSprite()
     {
@@ -110,29 +121,32 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
     void Fire()
     {
         GameObject bulletProjectile = Instantiate(bullet, firePoint.position, Quaternion.identity) as GameObject;
 
-        //Destroy(bulletProjectile, 2);
+        Destroy(bulletProjectile, 2);
     }
 
-    void TeleportFire()
-    {
-        if(teleportFired == false && Input.GetKeyDown(KeyCode.J))
-        {
-            teleportFired = true;
-            GameObject teleportProjectile = Instantiate(teleportBullet, firePoint.position, Quaternion.identity) as GameObject;
-            teleportBulletTransform = teleportProjectile.transform;
 
-            Destroy(teleportProjectile, 4);
-        }
-        else if(teleportFired == true && Input.GetKeyDown(KeyCode.J))
-        {
-            transform.position = new Vector3(teleportBulletTransform.transform.position.x, teleportBulletTransform.transform.position.y, transform.position.z);
-            teleportFired = false;
-        }
-    }
+    //void TeleportFire()
+    //{
+    //    if(teleportFired == false && Input.GetKeyDown(KeyCode.J))
+    //    {
+    //        teleportFired = true;
+    //        GameObject teleportProjectile = Instantiate(teleportBullet, firePoint.position, Quaternion.identity) as GameObject;
+    //        teleportBulletTransform = teleportProjectile.transform;
+
+    //        Destroy(teleportProjectile, 4);
+    //    }
+    //    else if(teleportFired == true && Input.GetKeyDown(KeyCode.J))
+    //    {
+    //        transform.position = new Vector3(teleportBulletTransform.transform.position.x, teleportBulletTransform.transform.position.y, transform.position.z);
+    //        teleportFired = false;
+    //    }
+    //}
+
 
     void TurnToBall()
     {
@@ -169,6 +183,45 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
+
+    void Dash()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (dashCoolCounter <= 0 && timeSinceDash <= 0)
+            {
+                activeMoveSpeed = dashSpeed;
+                timeSinceDash = dashCooldown;
+            }
+        }
+
+        if(timeSinceDash > 0)
+        {
+            timeSinceDash -= Time.deltaTime;
+
+            if(timeSinceDash <= 0)
+            {
+                activeMoveSpeed = moveSpeed;
+                dashCoolCounter = dashCooldown;
+            }
+        }
+
+        if(dashCoolCounter > 0)
+        {
+            dashCoolCounter -= Time.deltaTime;
+        }   
+    }
+
+
+    void BallBomb()
+    {
+        if(ball.activeSelf && Input.GetKeyDown(KeyCode.M))
+        {
+
+        }
+    }
+
 
     public void getDamage(float damageToPlayer)
     {
