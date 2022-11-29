@@ -30,9 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform teleportBulletTransform;
     public GameObject teleportBullet;
 
-    // Player Health
-    public float playerHealth;
-    public bool isDeath = false;
+  
 
     //Ball values
     public GameObject standing, ball;
@@ -46,13 +44,42 @@ public class PlayerMovement : MonoBehaviour
     public float dashLength = 0.5f, dashCooldown = 1f, dashSpeed = 15f;
     private float dashCoolCounter, timeSinceDash;
 
+    //Death
+    // Player Health
+    public float playerHealth;
+    public bool isDead = false;
+    public float deathTime;
+    public GameObject parentPlayer;
+
+
+
     void Start()
+
     {
         activeMoveSpeed = moveSpeed;
+
+        //parentObject = FindObjectOfType<>();
+
+        //DestroyObject()
+
+
     }
 
     void Update()
     {
+
+
+        if ( !isDead & playerHealth <= 0)
+        {
+            StartCoroutine(playerDeath(deathTime));
+         
+            isDead = true;
+
+            animator.SetBool("isDeadAnim", isDead);
+
+        }
+
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
 
         Move();
@@ -240,16 +267,29 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    /*
-        IEnumerator getInjure()
-        {
-      GetComponent<SpriteRenderer>().material.color = Color.red;
-              yield return new WaitForSeconds(1f);
-      GetComponent<SpriteRenderer>().material.color = Color.white;       
-   // Debug.Log("ah bu ac?d?");
-        }
-    
-    */
+    IEnumerator playerDeath(float deathTime)
+    {
+        //  GetComponent<dusmanhareket>().enabled = false;
+
+        // death_jump();
+        // GetComponent<CapsuleCollider2D>().enabled = false;
+        //GetComponent<Animator>().enabled = false;
+
+        parentPlayer.GetComponent<Rigidbody2D>().gravityScale = 0f;
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        moveSpeed = 0f;
+
+
+        yield return new WaitForSeconds(deathTime);
+        
+        //if()
+        
+        
+        
+        Destroy(parentPlayer);
+
+
+    }
 
 
 
