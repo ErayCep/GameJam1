@@ -749,14 +749,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6499128965564339049, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 88653587212432459, guid: 34c65b0e5647d4ce8b825c8de10e830b, type: 3}
-    - target: {fileID: 6499128965564339049, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: teleportBullet
-      value: 
-      objectReference: {fileID: 88653587212432459, guid: 34c65b0e5647d4ce8b825c8de10e830b, type: 3}
     - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_Name
       value: Player
@@ -767,11 +759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.32
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.27
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.z
