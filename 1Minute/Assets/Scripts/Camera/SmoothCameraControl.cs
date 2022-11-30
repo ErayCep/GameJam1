@@ -11,22 +11,31 @@ public class SmoothCameraControl : MonoBehaviour
     public float CameraTurnSpeed;
 
     public GameObject playerObject;
-
+    public GameObject playerSubObject;
     Rigidbody2D PlayerRigidBody;
 
     public bool faceRight ;
+
+    public bool stopTurnFace = false ;
      void Start()
     {
        PlayerRigidBody = playerObject.GetComponent<Rigidbody2D>();
 
-      
+  
 
 
-    }
-
+    } 
+     
     void FixedUpdate()
     {
-        faceRight = playerObject.GetComponent<ParentScript>().FaceRight;
+
+        if (!stopTurnFace)
+        {
+            
+            stopTurnFace = playerSubObject.GetComponent<PlayerMovement>().isDead;
+            faceRight = playerObject.GetComponent<ParentScript>().FaceRight;
+
+        }
 
         if (playerObject != null)
         {

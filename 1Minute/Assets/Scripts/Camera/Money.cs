@@ -27,7 +27,24 @@ public class Money : MonoBehaviour
 
      void Update()
     {
+        EarnCoinJumper();
+ 
+    
+    }
 
+    IEnumerator isDeadJumperWait()   // Jumper destroy two seconds after dead.
+    {
+       
+          //  objectJumper[0] = emptyObject;
+            yield return new WaitForSeconds(2.1f);
+            isDestroyedJumper = true;
+     
+
+    }
+
+    void EarnCoinJumper()
+    {
+       
         if (!isDeadJumper)
         {
             isDeadJumper = objectJumper[0].GetComponent<JumperEnemyMove>().isDeadEnemy;
@@ -39,30 +56,20 @@ public class Money : MonoBehaviour
 
         if (isDeadJumper &&  waitEarn && !isDestroyedJumper)
         {
-           
-            
- 
-                StartCoroutine(isDeadJumperWait());
-            
+
+
+
+            StartCoroutine(isDeadJumperWait());
+
         }
-        if(isDestroyedJumper && waitEarn)
+        if (isDestroyedJumper && waitEarn)
         {
             gold += jumperGold;
             waitEarn = false;
-        }    
-    
-    }
+        }
 
-    IEnumerator isDeadJumperWait()   // Jumper destroy two seconds after dead.
-    {
-       
-          //  objectJumper[0] = emptyObject;
-            yield return new WaitForSeconds(3f);
-            isDestroyedJumper = true;
-     
 
     }
-
 
 
     // void Update()
