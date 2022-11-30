@@ -41,6 +41,8 @@ public class JumperEnemyMove : MonoBehaviour
 
     //Injuring
    public GameObject injurerPlayer;
+
+
     void Start()
     {
      
@@ -78,6 +80,8 @@ public class JumperEnemyMove : MonoBehaviour
 
         yield return new WaitForSeconds(yokolma_time);
         Destroy(gameObject);
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

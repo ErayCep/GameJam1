@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        
+       
     }
 
 
@@ -66,10 +66,14 @@ public class Bullet : MonoBehaviour
 
     IEnumerator flashInjureEnemy()
     {
-        enemy.GetComponent<SpriteRenderer>().color = Color.red;
-        yield return new WaitForSeconds(0.2f);
+        if (    !(enemy.isDeadEnemy)    )
+        {
+            enemy.GetComponent<SpriteRenderer>().color = Color.red;
+            yield return new WaitForSeconds(0.2f);
 
-        enemy.GetComponent<SpriteRenderer>().color = Color.white;
+            enemy.GetComponent<SpriteRenderer>().color = Color.white;
+
+        }
 
     }
 
