@@ -7,7 +7,7 @@ public class ParentScript : MonoBehaviour
 
 
     Rigidbody2D ManRigidBody;
-    bool FaceRight = true;
+    public bool FaceRight = true ;
 
    void Start()
     {
@@ -39,7 +39,7 @@ public class ParentScript : MonoBehaviour
 
     void Faceturn()
     {
-
+        
         FaceRight = !FaceRight;
 
         Vector3 boyut3 = transform.localScale;
