@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+using TMPro;
 public class Money : MonoBehaviour
 {
 
@@ -29,7 +31,10 @@ public class Money : MonoBehaviour
     public bool isDeadJumper2 = false;
     public bool isDestroyedJumper2 = false;
     bool waitEarn2 = true;
-    
+
+    //TextMeshPro
+    public TextMeshProUGUI coinstext;
+
     void Start() 
     {
        
@@ -38,6 +43,9 @@ public class Money : MonoBehaviour
 
      void Update()
     {
+        coinstext.text = gold.ToString();
+        
+        
         EarnCoinJumper();
         EarnCoinJumper1();
         EarnCoinJumper2();
