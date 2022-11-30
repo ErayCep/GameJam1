@@ -14,7 +14,7 @@ public class Money : MonoBehaviour
 
     
 
-   // public GameObject emptyObject;
+    public GameObject[] coinObject  ;
   
 
     public GameObject [] objectJumper;
@@ -44,7 +44,7 @@ public class Money : MonoBehaviour
      void Update()
     {
         coinstext.text = gold.ToString();
-        
+  
         
         EarnCoinJumper();
         EarnCoinJumper1();
@@ -55,8 +55,20 @@ public class Money : MonoBehaviour
 
     IEnumerator isDeadJumperWait()   // Jumper destroy two seconds after dead.
     {
-            yield return new WaitForSeconds(2.1f);
-            isDestroyedJumper = true;
+      
+    
+        coinObject[0].SetActive(true);
+
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
+
+        isDestroyedJumper = true;
+
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
     }
 
     void EarnCoinJumper()
@@ -90,8 +102,18 @@ public class Money : MonoBehaviour
 
     IEnumerator isDeadJumperWait1()   
     {
-        yield return new WaitForSeconds(2.1f);
+        coinObject[0].SetActive(true);
+
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
+
         isDestroyedJumper1 = true;
+        
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
     }
     void EarnCoinJumper1()
     {
@@ -124,8 +146,17 @@ public class Money : MonoBehaviour
 
     IEnumerator isDeadJumperWait2()   
     {
-        yield return new WaitForSeconds(2.1f);
+        coinObject[0].SetActive(true);   
+        
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
         isDestroyedJumper2 = true;
+
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
     }
     void EarnCoinJumper2()
     {
