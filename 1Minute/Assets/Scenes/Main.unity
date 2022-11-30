@@ -270,6 +270,7 @@ MonoBehaviour:
   CameraSpeed: 0.07
   CameraTurnSpeed: 0.03
   playerObject: {fileID: 572978347}
+  playerSubObject: {fileID: 1435583363}
   faceRight: 0
   stopTurnFace: 0
 --- !u!114 &519420035
@@ -288,8 +289,14 @@ MonoBehaviour:
   jumperGold: 10
   objectJumper:
   - {fileID: 542656153}
+  - {fileID: 579280750}
+  - {fileID: 2032015311}
   isDeadJumper: 0
   isDestroyedJumper: 0
+  isDeadJumper1: 0
+  isDestroyedJumper1: 0
+  isDeadJumper2: 0
+  isDestroyedJumper2: 0
 --- !u!1 &542656153
 GameObject:
   m_ObjectHideFlags: 0

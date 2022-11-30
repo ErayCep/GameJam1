@@ -6,19 +6,30 @@ public class Money : MonoBehaviour
 {
 
 
-    public float gold = 7f;
+    public float gold = 0f;
     
     public float jumperGold = 10f;
 
     
 
    // public GameObject emptyObject;
-    bool waitEarn = true;
+  
 
     public GameObject [] objectJumper;
 
+    // Enemy 0
     public bool isDeadJumper = false;
     public bool  isDestroyedJumper = false;
+    bool waitEarn = true;
+    //Enemy 1
+    public bool isDeadJumper1 = false;
+    public bool isDestroyedJumper1 = false;
+    bool waitEarn1 = true;
+    //Enemy 2
+    public bool isDeadJumper2 = false;
+    public bool isDestroyedJumper2 = false;
+    bool waitEarn2 = true;
+    
     void Start() 
     {
        
@@ -28,18 +39,16 @@ public class Money : MonoBehaviour
      void Update()
     {
         EarnCoinJumper();
- 
-    
+        EarnCoinJumper1();
+        EarnCoinJumper2();
+
+
     }
 
     IEnumerator isDeadJumperWait()   // Jumper destroy two seconds after dead.
     {
-       
-          //  objectJumper[0] = emptyObject;
             yield return new WaitForSeconds(2.1f);
             isDestroyedJumper = true;
-     
-
     }
 
     void EarnCoinJumper()
@@ -71,34 +80,74 @@ public class Money : MonoBehaviour
 
     }
 
+    IEnumerator isDeadJumperWait1()   
+    {
+        yield return new WaitForSeconds(2.1f);
+        isDestroyedJumper1 = true;
+    }
+    void EarnCoinJumper1()
+    {
 
-    // void Update()
-    //{
+        if (!isDeadJumper1)
+        {
+            isDeadJumper1 = objectJumper[1].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
+        else
+        {
 
-    //    isDeadJumper = jumperObject[0].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
 
-    //    if (isDeadJumper & waitEarn)
-    //    {
-    //        gold += jumperGold;
-
-    //        isDeadJumper=false;
-    //        waitEarn=false;
-    //    }
-    //    StartCoroutine(OnceEarn());
-    //}
-
-    //IEnumerator OnceEarn() 
-    //{
+        if (isDeadJumper1 &&  waitEarn1 && !isDestroyedJumper1)
+        {
 
 
-    //    if (isDeadJumper)
-    //    {
-    //        jumperObject[0] = emptyObject;
-    //        yield return new WaitForSeconds(10f);
 
-    //        waitEarn=true;
-    //    }
-    //}
+            StartCoroutine(isDeadJumperWait1());
+
+        }
+        if (isDestroyedJumper1 && waitEarn1)
+        {
+            gold += jumperGold;
+            waitEarn1 = false;
+        }
+
+
+    }
+
+    IEnumerator isDeadJumperWait2()   
+    {
+        yield return new WaitForSeconds(2.1f);
+        isDestroyedJumper2 = true;
+    }
+    void EarnCoinJumper2()
+    {
+
+        if (!isDeadJumper2)
+        {
+            isDeadJumper2 = objectJumper[2].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
+        else
+        {
+
+        }
+
+        if (isDeadJumper2 &&  waitEarn2 && !isDestroyedJumper2)
+        {
+
+
+
+            StartCoroutine(isDeadJumperWait2());
+
+        }
+        if (isDestroyedJumper2 && waitEarn2)
+        {
+            gold += jumperGold;
+            waitEarn2 = false;
+        }
+
+
+    }
+
 
 
 
