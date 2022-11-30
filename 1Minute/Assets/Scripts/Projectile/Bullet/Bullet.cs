@@ -52,6 +52,24 @@ public class Bullet : MonoBehaviour
             StartCoroutine(flashInjureEnemy());
         }
 
+        IEnumerator flashInjureEnemy()
+        {
+
+
+            if (collision.tag == "Enemy" && !(enemy.isDeadEnemy))
+            {
+                 collision.GetComponent<SpriteRenderer>().color = Color.red;
+             
+                yield return new WaitForSeconds(0.2f);
+
+               collision.GetComponent<SpriteRenderer>().color = Color.white;
+
+            }
+
+        }
+
+  //    GetComponent<SpriteRenderer>().color = Color.red;
+
 
     }
 
@@ -62,20 +80,28 @@ public class Bullet : MonoBehaviour
         {
             isColliderBusy = false;
         }
+
+        // B U L L E T    R E D
+        GetComponent<SpriteRenderer>().color = Color.red;               
     }
 
-    IEnumerator flashInjureEnemy()
-    {
-        if (    !(enemy.isDeadEnemy)    )
-        {
-            enemy.GetComponent<SpriteRenderer>().color = Color.red;
-            yield return new WaitForSeconds(0.2f);
+    
+    
+    
+    
+    
+    //IEnumerator flashInjureEnemy()            //bug = if enemy more than 1, only 1 enemy was getting red while kill that enemy.
+    //{
+    //    if (    !(enemy.isDeadEnemy)    )
+    //    {
+    //        enemy.GetComponent<SpriteRenderer>().color = Color.red;
+    //        yield return new WaitForSeconds(0.2f);
 
-            enemy.GetComponent<SpriteRenderer>().color = Color.white;
+    //        enemy.GetComponent<SpriteRenderer>().color = Color.white;
 
-        }
+    //    }
 
-    }
+    //}
 
 
 

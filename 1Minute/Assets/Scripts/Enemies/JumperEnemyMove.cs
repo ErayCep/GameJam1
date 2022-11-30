@@ -71,9 +71,10 @@ public class JumperEnemyMove : MonoBehaviour
     }
     IEnumerator dusman_death_ziplayis(float yokolma_time)
     {
-      //  GetComponent<dusmanhareket>().enabled = false;
+        //  GetComponent<dusmanhareket>().enabled = false;
 
-       // death_jump();
+        // death_jump();
+        GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<CapsuleCollider2D>().enabled = false;
         //GetComponent<Animator>().enabled = false;
 
