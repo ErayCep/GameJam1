@@ -19,6 +19,8 @@ public class Bullet : MonoBehaviour
 
     public GameObject impact;
 
+    //Injure
+    public GameObject injurerEnemy;
 
     JumperEnemyMove enemy;
     void Start()
@@ -80,16 +82,16 @@ public class Bullet : MonoBehaviour
     }
 //>>>>>>> Stashed changes
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         Instantiate(impact, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
 
-        if (collision.tag == "Enemy")
+        if (other.tag == "Enemy")
         {
             isColliderBusy = false;
         }
