@@ -5,10 +5,14 @@ using UnityEngine;
 public class AudioGet : MonoBehaviour
 {
     public GameObject playerAudioOBJECT;
+    
+    
     AudioSource sourceAudio;
 
     public AudioClip shotAudio;
+    
     public AudioClip jumpAudio;
+    public bool isGroundAudio = true;
     void Start()
     {
      sourceAudio = GetComponent<AudioSource>();
@@ -20,7 +24,7 @@ public class AudioGet : MonoBehaviour
 
     void Update()
     {
-    
+      isGroundAudio =  playerAudioOBJECT.GetComponent<PlayerMovement>().isGrounded;
         
         playJump();
         playShot();
@@ -40,9 +44,9 @@ public class AudioGet : MonoBehaviour
 
     }
 
-    void playJump()
+     void playJump()
     {
-        if ( (Input.GetKeyDown(KeyCode.Space)) )
+        if (isGroundAudio &&(Input.GetKeyDown(KeyCode.Space)) )
         {
             sourceAudio.PlayOneShot(jumpAudio);
 

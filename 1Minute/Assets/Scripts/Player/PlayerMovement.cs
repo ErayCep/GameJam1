@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Jump variables
     public float jumpForce = 10f;
-    private bool isGrounded;
+    public bool isGrounded;                         // private to public
     public LayerMask ground;
     public Transform groundCheck;
     private float checkRadius = 0.4f;
