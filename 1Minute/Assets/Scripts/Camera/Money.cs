@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 using TMPro;
@@ -12,7 +13,8 @@ public class Money : MonoBehaviour
     
     public float jumperGold = 10f;
 
-    
+
+    public GameObject heroObject;
 
     public GameObject[] coinObject  ;
   
@@ -37,7 +39,7 @@ public class Money : MonoBehaviour
 
     void Start() 
     {
-       
+      StartCoroutine(Countdown60());
         
     }
 
@@ -53,6 +55,18 @@ public class Money : MonoBehaviour
 
     }
 
+    IEnumerator Countdown60()
+    {
+        yield return new WaitForSeconds(10f);
+
+        heroObject.GetComponent<PlayerMovement>().playerHealth = 0;
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+
+    }
+
+    //  E N E M I E S
     IEnumerator isDeadJumperWait()   // Jumper destroy two seconds after dead.
     {
       
