@@ -890,7 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetCharacter: {fileID: 1609707595}
-  CameraSpeed: 0.07
+  CameraSpeed: 0.06
   CameraTurnSpeed: 0.03
   playerObject: {fileID: 572978347}
   playerSubObject: {fileID: 1435583363}
@@ -3425,7 +3425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1454910060
 SpriteRenderer:
   m_ObjectHideFlags: 0
