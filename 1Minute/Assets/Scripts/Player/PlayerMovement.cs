@@ -28,10 +28,13 @@ public class PlayerMovement : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
-    //Ball values
-    public GameObject standing, ball;
-    public float waitToBall;
-    private float ballCounter;
+    //Bullet Variables
+    public GameObject[] bullets;
+    private int activeBulletIndex = 0;
+
+    public GameObject standing;
+
+    public bool doubleJumpUnlocked = false;
 
     //Dash Variables
     private float activeMoveSpeed;
@@ -45,9 +48,13 @@ public class PlayerMovement : MonoBehaviour
     public float deathTime;
     public GameObject parentPlayer;
 
+    private bool canDoubleJump = true;
+
     private void Awake()
     {
         instance = this;
+
+        bullet = bullets[activeBulletIndex];
     }
 
     void Start()
@@ -67,8 +74,18 @@ public class PlayerMovement : MonoBehaviour
             Dash();
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space) && (isGrounded || (canDoubleJump && doubleJumpUnlocked)))
         {
+            if(isGrounded)
+            {
+                canDoubleJump = true;
+            }
+            else
+            {
+                animator.SetTrigger("doubleJump");
+                canDoubleJump = false;  
+            }
+
             Jump();
         }
 
@@ -85,20 +102,46 @@ public class PlayerMovement : MonoBehaviour
             isDead = true;
 
             animator.SetBool("isDeadAnim", isDead);
-
         }
 
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            activeBulletIndex++;
+
+            if(activeBulletIndex > bullets.Length - 1)
+            {
+                activeBulletIndex = 0;
+            }
+            SwitchBullet();
+        }
+
+<<<<<<< Updated upstream
         if(playerHealth == 0)
         {
             StartCoroutine(DeathSpawn());
         }
+=======
+        animator.SetBool("isGrounded", isGrounded);
+    }
+>>>>>>> Stashed changes
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "BallUnlock")
+        {
+            ParentScript.instance.ballUnlocked = true;
+        }
     }
 
     void Move()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(activeMoveSpeed * moveInput.x, rb.velocity.y);
+    }
+
+    void SwitchBullet()
+    {
+        bullet = bullets[activeBulletIndex];
     }
 
 
@@ -148,49 +191,32 @@ public class PlayerMovement : MonoBehaviour
         }   
     }
 
-
-    void BallBomb()
-    {
-        if(ball.activeSelf && Input.GetKeyDown(KeyCode.M))
-        {
-
-        }
-    }
-
-
     public void getDamage(float damageToPlayer)
     {
         if (playerHealth - damageToPlayer >= 0)
-
         {
             playerHealth -= damageToPlayer;
         }
         else
-
         {
             playerHealth = 0;
            
         }
-
-        
-
     }
 
  
     IEnumerator playerDeath(float deathTime)
     {
-        //  GetComponent<dusmanhareket>().enabled = false;
-
-        // death_jump();
-        // GetComponent<CapsuleCollider2D>().enabled = false;
-        //GetComponent<Animator>().enabled = false;
-
         parentPlayer.GetComponent<Rigidbody2D>().gravityScale = 0f;
         GetComponent<CapsuleCollider2D>().enabled = false;
         activeMoveSpeed = 0f;
 
         yield return new WaitForSeconds(deathTime);
+<<<<<<< Updated upstream
     
+=======
+
+>>>>>>> Stashed changes
         Destroy(parentPlayer);
     }
 

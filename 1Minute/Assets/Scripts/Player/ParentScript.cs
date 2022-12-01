@@ -13,6 +13,8 @@ public class ParentScript : MonoBehaviour
     public float waitToBall;
     private float ballCounter;
 
+    public bool ballUnlocked = false;
+
     private void Awake()
     {
         instance = this;
@@ -25,7 +27,10 @@ public class ParentScript : MonoBehaviour
 
     void Update()
     {
-        TurnToBall();    
+        if(ballUnlocked == true)
+        {
+            TurnToBall();
+        }
     }
 
     public void FixedUpdate()

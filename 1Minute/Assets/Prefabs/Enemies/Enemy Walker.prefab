@@ -148,9 +148,10 @@ GameObject:
   - component: {fileID: 7026757346241536680}
   - component: {fileID: 7026757346241536681}
   - component: {fileID: 7026757346241536682}
+  - component: {fileID: 3912806723106148105}
   m_Layer: 0
   m_Name: Enemy Walker
-  m_TagString: Untagged
+  m_TagString: WanderEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +171,7 @@ Transform:
   - {fileID: 7026757346034936138}
   - {fileID: 7026757346372883058}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7026757346241536680
 CircleCollider2D:
@@ -230,6 +231,20 @@ MonoBehaviour:
   waitAtPoints: 1
   moveSpeed: 4
   jumpForce: 10
+--- !u!114 &3912806723106148105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7026757346241536683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5b098934f49490bb40860f34ac0198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  walker: {fileID: 7026757346241536683}
 --- !u!1 &7026757346372883059
 GameObject:
   m_ObjectHideFlags: 0

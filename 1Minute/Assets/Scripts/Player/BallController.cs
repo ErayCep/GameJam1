@@ -13,7 +13,10 @@ public class BallController : MonoBehaviour
     public float checkRadius = 0.4f;
     public LayerMask ground;
 
+    public Transform bombPosition;
+
     public Animator animator;
+    public GameObject bomb;
 
     private bool isGrounded;
 
@@ -33,6 +36,11 @@ public class BallController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
+        }
+
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            Instantiate(bomb, bombPosition.position, bomb.transform.rotation);
         }
 
         SetAnimation();

@@ -65,4 +65,12 @@ public class WalkerEnemy : MonoBehaviour
 
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            PlayerMovement.instance.getDamage(5f);
+        }
+    }
 }

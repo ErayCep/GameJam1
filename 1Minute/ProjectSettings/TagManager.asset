@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Boss
   - ParentPlayer
+  - WanderEnemy
+  - BallUnlock
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Ground
   - Boss
   - SecondText
-  - 
+  - Destructible
   - 
   - 
   - 
