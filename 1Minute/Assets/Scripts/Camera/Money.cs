@@ -7,12 +7,13 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class Money : MonoBehaviour
 {
+    RealMoney RealMoneyObject;
 
+    public float gold ;
 
-    public float gold = 0f;
-    
+    public float RealMoneyCome;
+
     public float jumperGold = 10f;
-
 
     public GameObject heroObject;
 
@@ -33,19 +34,23 @@ public class Money : MonoBehaviour
     public bool isDeadJumper2 = false;
     public bool isDestroyedJumper2 = false;
     bool waitEarn2 = true;
-
+    
     //TextMeshPro
     public TextMeshProUGUI coinstext;
 
     void Start() 
     {
       StartCoroutine(Countdown60());
-        
+
+        RealMoneyObject = FindObjectOfType<RealMoney>();
+
+        RealMoneyCome = RealMoneyObject.GetComponent<RealMoney>().realGold;
+
     }
 
      void Update()
     {
-        coinstext.text = gold.ToString();
+        coinstext.text = RealMoney.Instance.realGold.ToString();
   
         
         EarnCoinJumper();
@@ -57,7 +62,7 @@ public class Money : MonoBehaviour
 
     IEnumerator Countdown60()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(60f);
 
         heroObject.GetComponent<PlayerMovement>().playerHealth = 0;
         yield return new WaitForSeconds(1f);
@@ -107,7 +112,8 @@ public class Money : MonoBehaviour
         }
         if (isDestroyedJumper && waitEarn)
         {
-            gold += jumperGold;
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn = false;
         }
 
@@ -151,7 +157,8 @@ public class Money : MonoBehaviour
         }
         if (isDestroyedJumper1 && waitEarn1)
         {
-            gold += jumperGold;
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn1 = false;
         }
 
@@ -194,7 +201,9 @@ public class Money : MonoBehaviour
         }
         if (isDestroyedJumper2 && waitEarn2)
         {
-            gold += jumperGold;
+         
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn2 = false;
         }
 

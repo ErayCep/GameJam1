@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -87,6 +88,10 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        if(playerHealth == 0)
+        {
+            StartCoroutine(DeathSpawn());
+        }
 
     }
 
@@ -171,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
+ 
     IEnumerator playerDeath(float deathTime)
     {
         //  GetComponent<dusmanhareket>().enabled = false;
@@ -184,19 +189,16 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = false;
         activeMoveSpeed = 0f;
 
-
         yield return new WaitForSeconds(deathTime);
-        
-        //if()
-        
-        
-        
+    
         Destroy(parentPlayer);
-
-
     }
 
-
+    IEnumerator DeathSpawn()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
 
 }
