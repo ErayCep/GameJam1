@@ -176,12 +176,9 @@ MonoBehaviour:
   groundCheck: {fileID: 6499128964651587190}
   firePoint: {fileID: 6499128966473771299}
   bullet: {fileID: 88653587212432459, guid: afcb8770a2e7d40cba0d6dec17a44a11, type: 3}
-  teleportBullet: {fileID: 88653587212432459, guid: 34c65b0e5647d4ce8b825c8de10e830b, type: 3}
   standing: {fileID: 6499128965564339055}
   ball: {fileID: 6563979620454065786}
   waitToBall: 0.5
-  ballAnimator: {fileID: 8874340435059145616}
-  ballBomb: {fileID: 0}
   dashLength: 0.5
   dashCooldown: 1
   dashSpeed: 15
@@ -224,7 +221,7 @@ Transform:
   - {fileID: 6499128964651587190}
   - {fileID: 8655350997603783134}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6499128965572256178
 Rigidbody2D:
@@ -260,6 +257,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FaceRight: 1
+  standing: {fileID: 6499128965564339055}
+  ball: {fileID: 6563979620454065786}
+  waitToBall: 0.5
 --- !u!1 &6499128966473771296
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 3893662827484185531}
   - component: {fileID: 1259681688}
   - component: {fileID: 8874340435059145616}
+  - component: {fileID: 588495255}
   m_Layer: 0
   m_Name: Player Ball
   m_TagString: Untagged
@@ -413,3 +414,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &588495255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563979620454065786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ff9a52948804c2ca2089b7c4f3f1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  rb: {fileID: 6499128965572256178}
+  jumpForce: 28
+  groundCheck: {fileID: 6499128964651587190}
+  checkRadius: 0.4
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  animator: {fileID: 8874340435059145616}
