@@ -7,7 +7,11 @@ public class ParentScript : MonoBehaviour
     public static ParentScript instance;
 
     Rigidbody2D ManRigidBody;
-    public bool FaceRight = true ;
+    public bool FaceRight = true;
+
+    public GameObject standing, ball;
+    public float waitToBall;
+    private float ballCounter;
 
     private void Awake()
     {
@@ -17,7 +21,12 @@ public class ParentScript : MonoBehaviour
     void Start()
     {
         ManRigidBody = GetComponent<Rigidbody2D>();
-    } 
+    }
+
+    void Update()
+    {
+        TurnToBall();    
+    }
 
     public void FixedUpdate()
     {
@@ -28,19 +37,46 @@ public class ParentScript : MonoBehaviour
         }
         else if (ManRigidBody.velocity.x>0 && !FaceRight)
         {
-
-
             Faceturn();
-
-
         }
 
     }
 
-
-
-
-
+    void TurnToBall()
+    {
+        if (!ball.activeSelf)
+        {
+            if (Input.GetAxisRaw("Vertical") < -.9f)
+            {
+                ballCounter -= Time.deltaTime;
+                if (ballCounter <= 0)
+                {
+                    ball.SetActive(true);
+                    standing.SetActive(false);
+                }
+            }
+            else
+            {
+                ballCounter = waitToBall;
+            }
+        }
+        else
+        {
+            if (Input.GetAxisRaw("Vertical") > .9f)
+            {
+                ballCounter -= Time.deltaTime;
+                if (ballCounter <= 0)
+                {
+                    ball.SetActive(false);
+                    standing.SetActive(true);
+                }
+            }
+            else
+            {
+                ballCounter = waitToBall;
+            }
+        }
+    }
 
     void Faceturn()
     {

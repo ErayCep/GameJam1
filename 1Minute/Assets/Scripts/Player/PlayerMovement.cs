@@ -27,19 +27,10 @@ public class PlayerMovement : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
-    //Teleport Shooting
-    private bool teleportFired;
-    private Transform teleportBulletTransform;
-    public GameObject teleportBullet;
-
-  
-
     //Ball values
     public GameObject standing, ball;
     public float waitToBall;
     private float ballCounter;
-    public Animator ballAnimator;
-    public GameObject ballBomb;
 
     //Dash Variables
     private float activeMoveSpeed;
@@ -68,13 +59,8 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
 
         Move();
-       // FlipSprite();
 
-        if(ball.activeSelf)
-        {
-            SetBallAnimation();
-        }
-        else if(standing.activeSelf)
+        if(standing.activeSelf)
         {
             SetStandingAnimation();
             Dash();
@@ -90,8 +76,6 @@ public class PlayerMovement : MonoBehaviour
             Fire();
             animator.SetTrigger("isShot");
         }
-
-        TurnToBall();
 
         if (!isDead & playerHealth <= 0)
         {
@@ -118,95 +102,18 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
 
-
-    void SetBallAnimation()
-    {
-        ballAnimator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
-    }
-
-
     void Jump()
     {
         
         rb.velocity = Vector2.up * jumpForce;
     }
 
-    /*
-    void FlipSprite()
-    {
-        if(moveInput.x == 1)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else if(moveInput.x == -1)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-    }
-
-    */
     void Fire()
     {
         GameObject bulletProjectile = Instantiate(bullet, firePoint.position, Quaternion.identity) as GameObject;
 
         Destroy(bulletProjectile, 2);
     }
-
-
-    //void TeleportFire()
-    //{
-    //    if(teleportFired == false && Input.GetKeyDown(KeyCode.J))
-    //    {
-    //        teleportFired = true;
-    //        GameObject teleportProjectile = Instantiate(teleportBullet, firePoint.position, Quaternion.identity) as GameObject;
-    //        teleportBulletTransform = teleportProjectile.transform;
-
-    //        Destroy(teleportProjectile, 4);
-    //    }
-    //    else if(teleportFired == true && Input.GetKeyDown(KeyCode.J))
-    //    {
-    //        transform.position = new Vector3(teleportBulletTransform.transform.position.x, teleportBulletTransform.transform.position.y, transform.position.z);
-    //        teleportFired = false;
-    //    }
-    //}
-
-
-    void TurnToBall()
-    {
-        if(!ball.activeSelf)
-        {
-            if(Input.GetAxisRaw("Vertical") < -.9f)
-            {
-                ballCounter -= Time.deltaTime;
-                if(ballCounter <= 0)
-                {
-                    ball.SetActive(true);
-                    standing.SetActive(false);
-                }
-            }
-            else
-            {
-                ballCounter = waitToBall;
-            }
-        }
-        else
-        {
-            if(Input.GetAxisRaw("Vertical") > .9f)
-            {
-                ballCounter -= Time.deltaTime;
-                if(ballCounter <= 0)
-                {
-                    ball.SetActive(false);
-                    standing.SetActive(true);
-                }
-            }
-            else
-            {
-                ballCounter = waitToBall;
-            }
-        }
-    }
-
 
     void Dash()
     {
