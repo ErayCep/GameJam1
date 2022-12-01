@@ -2636,7 +2636,7 @@ Transform:
   - {fileID: 534327880}
   - {fileID: 172233111}
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &41221995
 BoxCollider2D:
@@ -3591,7 +3591,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &51604888
 BoxCollider2D:
@@ -3701,7 +3701,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &55219023
 GameObject:
@@ -4125,7 +4125,7 @@ Transform:
   - {fileID: 499245237}
   - {fileID: 523598250}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &66786710
 GameObject:
@@ -5922,7 +5922,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &127001043
 GameObject:
@@ -7613,7 +7613,7 @@ Transform:
   - {fileID: 219597782}
   - {fileID: 182519011}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170438646
 GameObject:
@@ -7709,7 +7709,7 @@ Transform:
   - {fileID: 515870965}
   - {fileID: 942021498}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &170438649
 BoxCollider2D:
@@ -9167,7 +9167,7 @@ Transform:
   m_Children:
   - {fileID: 393516721}
   m_Father: {fileID: 0}
-  m_RootOrder: 55
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &201408714
 BoxCollider2D:
@@ -9539,7 +9539,7 @@ Transform:
   - {fileID: 863356941}
   - {fileID: 1730059377}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &210177488
 BoxCollider2D:
@@ -9733,7 +9733,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216958542
 GameObject:
@@ -9833,7 +9833,7 @@ Transform:
   - {fileID: 416197738}
   - {fileID: 1473704954}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &216958545
 BoxCollider2D:
@@ -10113,7 +10113,7 @@ Transform:
   - {fileID: 430706230}
   - {fileID: 1444350666}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &220339485
 GameObject:
@@ -10309,7 +10309,7 @@ Transform:
   m_Children:
   - {fileID: 507911289}
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223200895
 GameObject:
@@ -10479,7 +10479,7 @@ Transform:
   m_Children:
   - {fileID: 931894064}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &224316368
 BoxCollider2D:
@@ -12201,7 +12201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278493258}
   - component: {fileID: 278493259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13214,7 +13214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 318803341}
   - component: {fileID: 318803342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13710,6 +13710,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &333604924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6499128965564339051, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 27.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
 --- !u!1 &337363049
 GameObject:
   m_ObjectHideFlags: 0
@@ -14062,7 +14125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350007595}
   - component: {fileID: 350007596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14402,7 +14465,7 @@ Transform:
   - {fileID: 1142746364}
   - {fileID: 807561947}
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.14}
 --- !u!61 &356582111
 BoxCollider2D:
@@ -15028,7 +15091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378686059}
   - component: {fileID: 378686060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18620,7 +18683,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &451563033
 GameObject:
@@ -18735,7 +18798,7 @@ Transform:
   - {fileID: 496352650}
   - {fileID: 1327983682}
   m_Father: {fileID: 0}
-  m_RootOrder: 64
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455464940
 GameObject:
@@ -21301,7 +21364,7 @@ Transform:
   - {fileID: 200479301}
   - {fileID: 219348814}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 361.975, y: 181.276, z: -179.573}
 --- !u!1 &525005500
 GameObject:
@@ -23043,7 +23106,7 @@ Transform:
   m_Children:
   - {fileID: 10564507}
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555166916
 GameObject:
@@ -24072,7 +24135,7 @@ Transform:
   - {fileID: 1859445277}
   - {fileID: 338773564}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &571710371
 BoxCollider2D:
@@ -25625,7 +25688,7 @@ GameObject:
   - component: {fileID: 609238420}
   - component: {fileID: 609238419}
   - component: {fileID: 609238421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25703,7 +25766,7 @@ Transform:
   - {fileID: 278493258}
   - {fileID: 856381832}
   m_Father: {fileID: 0}
-  m_RootOrder: 56
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &609238421
 BoxCollider2D:
@@ -26498,7 +26561,7 @@ Transform:
   - {fileID: 852234900}
   - {fileID: 855013216}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &625418269
 BoxCollider2D:
@@ -27972,7 +28035,7 @@ Transform:
   - {fileID: 455464941}
   - {fileID: 540173649}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &663040136
 BoxCollider2D:
@@ -29038,7 +29101,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &689300914
 BoxCollider2D:
@@ -29286,7 +29349,7 @@ Transform:
   - {fileID: 1702421452}
   - {fileID: 448595797}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694550971
 GameObject:
@@ -30336,7 +30399,7 @@ Transform:
   - {fileID: 846036423}
   - {fileID: 1404594539}
   m_Father: {fileID: 0}
-  m_RootOrder: 59
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &727105600
 GameObject:
@@ -30421,7 +30484,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &727105603
 BoxCollider2D:
@@ -34053,7 +34116,7 @@ Transform:
   - {fileID: 819918416}
   - {fileID: 371687115}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &816630747
 BoxCollider2D:
@@ -35546,7 +35609,7 @@ Transform:
   m_Children:
   - {fileID: 1908382134}
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &841112750
 BoxCollider2D:
@@ -36592,7 +36655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856381832}
   - component: {fileID: 856381833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38218,7 +38281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &895608505
 BoxCollider2D:
@@ -38368,7 +38431,7 @@ Transform:
   - {fileID: 327309867}
   - {fileID: 413431536}
   m_Father: {fileID: 0}
-  m_RootOrder: 61
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900800281
 GameObject:
@@ -39164,7 +39227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914004627}
   - component: {fileID: 914004628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39413,7 +39476,7 @@ Transform:
   - {fileID: 852717745}
   - {fileID: 1837873693}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &920615975
 BoxCollider2D:
@@ -39535,7 +39598,7 @@ Transform:
   - {fileID: 438060659}
   - {fileID: 1884086120}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &921473446
 BoxCollider2D:
@@ -39912,7 +39975,7 @@ Transform:
   - {fileID: 337363050}
   - {fileID: 235608002}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931894063
 GameObject:
@@ -40290,7 +40353,7 @@ Transform:
   - {fileID: 1975182918}
   - {fileID: 179756407}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &941478428
 GameObject:
@@ -41733,7 +41796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 967072095}
   - component: {fileID: 967072096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42236,7 +42299,7 @@ Transform:
   - {fileID: 1096265532}
   - {fileID: 796875116}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975208967
 GameObject:
@@ -42784,7 +42847,7 @@ Transform:
   - {fileID: 813562588}
   - {fileID: 681199001}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &988394085
 BoxCollider2D:
@@ -43154,7 +43217,7 @@ Transform:
   - {fileID: 947031142}
   - {fileID: 1823726144}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993171420
 GameObject:
@@ -43720,7 +43783,7 @@ Transform:
   m_Children:
   - {fileID: 892942236}
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005811504
 GameObject:
@@ -44691,8 +44754,13 @@ Transform:
   - {fileID: 782070612}
   - {fileID: 812528505}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1028456275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6499128965564339055, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_PrefabInstance: {fileID: 333604924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1028495075
 GameObject:
   m_ObjectHideFlags: 0
@@ -46171,7 +46239,7 @@ Transform:
   - {fileID: 680965600}
   - {fileID: 1051601983}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: -2.495, y: 539.987, z: -360.298}
 --- !u!61 &1055433065
 BoxCollider2D:
@@ -46630,7 +46698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072680474}
   - component: {fileID: 1072680475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48758,7 +48826,7 @@ Transform:
   m_Children:
   - {fileID: 1624072926}
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1112903879
 BoxCollider2D:
@@ -49586,7 +49654,7 @@ Transform:
   - {fileID: 1049503491}
   - {fileID: 982529805}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -156.108, z: 0}
 --- !u!61 &1130909380
 BoxCollider2D:
@@ -49624,7 +49692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131065444}
   - component: {fileID: 1131065445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50683,7 +50751,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1169923126
 GameObject:
@@ -50782,7 +50850,7 @@ Transform:
   - {fileID: 1187462008}
   - {fileID: 942500146}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1169923129
 BoxCollider2D:
@@ -51630,7 +51698,7 @@ Transform:
   - {fileID: 948751763}
   - {fileID: 1720882392}
   m_Father: {fileID: 0}
-  m_RootOrder: 62
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1204224183
 GameObject:
@@ -51726,7 +51794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1208022166}
   - component: {fileID: 1208022167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51919,7 +51987,7 @@ Transform:
   - {fileID: 2040795430}
   - {fileID: 1009806249}
   m_Father: {fileID: 0}
-  m_RootOrder: 63
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209491602
 GameObject:
@@ -54160,7 +54228,7 @@ Transform:
   - {fileID: 157226553}
   - {fileID: 74592954}
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1256514152
 BoxCollider2D:
@@ -55702,7 +55770,7 @@ Transform:
   m_Children:
   - {fileID: 1504583514}
   m_Father: {fileID: 0}
-  m_RootOrder: 57
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1298701965
 BoxCollider2D:
@@ -55994,7 +56062,7 @@ Transform:
   - {fileID: 567624490}
   - {fileID: 1218098706}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1302488197
 BoxCollider2D:
@@ -56283,7 +56351,7 @@ Transform:
   - {fileID: 1467627772}
   - {fileID: 1119864749}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1310625628
 GameObject:
@@ -56575,7 +56643,7 @@ Transform:
   - {fileID: 205623381}
   - {fileID: 301682329}
   m_Father: {fileID: 0}
-  m_RootOrder: 60
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314438521
 GameObject:
@@ -56752,7 +56820,7 @@ Transform:
   - {fileID: 950674272}
   - {fileID: 635675492}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: -174.573, z: 1.956}
 --- !u!1 &1319100032
 GameObject:
@@ -58587,7 +58655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1363671935}
   - component: {fileID: 1363671936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_30 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58745,7 +58813,7 @@ Transform:
   m_Children:
   - {fileID: 849609602}
   m_Father: {fileID: 0}
-  m_RootOrder: 58
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1364560599
 BoxCollider2D:
@@ -59894,7 +59962,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1391662759
 GameObject:
@@ -60523,7 +60591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418800017}
   - component: {fileID: 1418800018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61745,7 +61813,7 @@ Transform:
   - {fileID: 544247539}
   - {fileID: 2126088158}
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440462071
 GameObject:
@@ -64024,7 +64092,7 @@ Transform:
   - {fileID: 1682020745}
   - {fileID: 183409503}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1493804981
 GameObject:
@@ -65165,7 +65233,7 @@ Transform:
   - {fileID: 1227011956}
   - {fileID: 203064452}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1516359314
 GameObject:
@@ -65510,7 +65578,7 @@ Transform:
   - {fileID: 954963008}
   - {fileID: 787117566}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1533698559
 BoxCollider2D:
@@ -66310,7 +66378,7 @@ Transform:
   - {fileID: 1428266212}
   - {fileID: 484315807}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1565978120
 GameObject:
@@ -68732,7 +68800,7 @@ Transform:
   - {fileID: 1287333147}
   - {fileID: 804891555}
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1670972586
 GameObject:
@@ -72437,6 +72505,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1781216792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_PrefabInstance: {fileID: 333604924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1781216795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_PrefabInstance: {fileID: 333604924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1781809757
 GameObject:
   m_ObjectHideFlags: 0
@@ -73466,7 +73544,7 @@ Transform:
   - {fileID: 821713612}
   - {fileID: 225776884}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1805907532
 BoxCollider2D:
@@ -75144,6 +75222,7 @@ GameObject:
   - component: {fileID: 1860620361}
   - component: {fileID: 1860620360}
   - component: {fileID: 1860620359}
+  - component: {fileID: 1860620362}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -75217,6 +75296,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1860620362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860620358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fe3fc6f35f5ca4b948919baa2adb20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetCharacter: {fileID: 1781216795}
+  CameraSpeed: 0.06
+  CameraTurnSpeed: 0.03
+  playerObject: {fileID: 1781216792}
+  playerSubObject: {fileID: 1028456275}
+  faceRight: 0
+  stopTurnFace: 0
 --- !u!1 &1862430655
 GameObject:
   m_ObjectHideFlags: 0
@@ -80632,7 +80730,7 @@ Transform:
   - {fileID: 401373399}
   - {fileID: 1885540247}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2013152545
 BoxCollider2D:
@@ -81083,7 +81181,7 @@ Transform:
   - {fileID: 1697062731}
   - {fileID: 764806847}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &2030372037
 CapsuleCollider2D:
@@ -83412,7 +83510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104628568}
   - component: {fileID: 2104628569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset-sliced_62 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
