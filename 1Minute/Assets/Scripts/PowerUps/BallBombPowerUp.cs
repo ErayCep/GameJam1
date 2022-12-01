@@ -13,3 +13,36 @@ public class BallBombPowerUp : MonoBehaviour
         }
     }
 }
+
+//RealMoney ballBombObject;
+//public bool ballBombBool;
+//private void Start()
+//{
+
+//    ballBombObject = FindObjectOfType<RealMoney>();
+
+//    //  ballBombBool = ballBombObject.GetComponent<RealMoney>().ballBombUnlockedload;
+
+//}
+
+//private void Update()
+//{
+
+//    if (!(ballBombObject.GetComponent<RealMoney>().ballBombUnlockedload))
+//    {
+//        BallController.instance.ballBombUnlocked = true;
+//        Debug.Log("ben calýsýyom ha");
+//    }
+//}
+//private void OnTriggerEnter2D(Collider2D other)
+//{
+//    if (other.tag == "Player")
+//    {
+//        Destroy(gameObject);
+//        BallController.instance.ballBombUnlocked = true;
+
+
+
+
+//    }
+//}

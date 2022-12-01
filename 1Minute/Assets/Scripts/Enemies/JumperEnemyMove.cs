@@ -90,8 +90,11 @@ public class JumperEnemyMove : MonoBehaviour
         if (collision.tag == "Player" && !isColliderBusy)
         {
             isColliderBusy=true;
-            collision.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
-
+         
+            if (injurerPlayer.activeSelf) 
+            {
+                collision.GetComponent<PlayerMovement>().getDamage(damageToPlayer);
+            }
             StartCoroutine(flashInjure());
             
             //  collision.GetComponent<moving>().enabled = false;
