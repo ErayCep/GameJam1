@@ -8,15 +8,17 @@ public class Bullet : MonoBehaviour
 
     //PlayerMovement player;
     ParentScript player;
+    BossBattle boss;
 
     public float bulletSpeed = 15f;
 
     //Damage to Enemy
     public float damageToEnemy;
+    public int damageToBoss = 5;
     bool isColliderBusy = false;
 
-    //Injure
-    public GameObject injurerEnemy;
+    public GameObject impact;
+
 
     JumperEnemyMove enemy;
     void Start()
@@ -39,15 +41,12 @@ public class Bullet : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.tag == "Enemy" && !isColliderBusy)
-
+        if (other.tag == "Enemy" && !isColliderBusy)
         {
-            isColliderBusy=true;
-            collision.GetComponent<JumperEnemyMove>().getDamage(damageToEnemy);
-
-  
+            isColliderBusy = true;
+            other.GetComponent<JumperEnemyMove>().getDamage(damageToEnemy);
 
             StartCoroutine(flashInjureEnemy());
         }
@@ -56,13 +55,13 @@ public class Bullet : MonoBehaviour
         {
 
 
-            if (collision.tag == "Enemy" && !(enemy.isDeadEnemy))
+            if (other.tag == "Enemy" && !(enemy.isDeadEnemy))
             {
-                 collision.GetComponent<SpriteRenderer>().color = Color.red;
+                other.GetComponent<SpriteRenderer>().color = Color.red;
              
                 yield return new WaitForSeconds(0.2f);
 
-               collision.GetComponent<SpriteRenderer>().color = Color.white;
+                other.GetComponent<SpriteRenderer>().color = Color.white;
 
             }
 
@@ -70,7 +69,21 @@ public class Bullet : MonoBehaviour
 
   //    GetComponent<SpriteRenderer>().color = Color.red;
 
+//=======
+        if (other.tag == "Boss")
+        {
+            BossHealthController.instance.TakeDamage(damage: damageToBoss);
+        }
 
+        Instantiate(impact, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+//>>>>>>> Stashed changes
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Instantiate(impact, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -82,32 +95,5 @@ public class Bullet : MonoBehaviour
         }
 
         // B U L L E T    R E D
-        GetComponent<SpriteRenderer>().color = Color.red;               
     }
-
-    
-    
-    
-    
-    
-    //IEnumerator flashInjureEnemy()            //bug = if enemy more than 1, only 1 enemy was getting red while kill that enemy.
-    //{
-    //    if (    !(enemy.isDeadEnemy)    )
-    //    {
-    //        enemy.GetComponent<SpriteRenderer>().color = Color.red;
-    //        yield return new WaitForSeconds(0.2f);
-
-    //        enemy.GetComponent<SpriteRenderer>().color = Color.white;
-
-    //    }
-
-    //}
-
-
-
-
-
-
-
-
 }

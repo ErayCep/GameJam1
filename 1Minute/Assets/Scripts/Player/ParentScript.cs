@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class ParentScript : MonoBehaviour
 {
-
+    public static ParentScript instance;
 
     Rigidbody2D ManRigidBody;
     public bool FaceRight = true ;
 
-   void Start()
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    void Start()
     {
         ManRigidBody = GetComponent<Rigidbody2D>();
     } 

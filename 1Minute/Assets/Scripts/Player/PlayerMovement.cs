@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
+
     //Movement Props
     public Rigidbody2D rb;
 
@@ -51,25 +53,18 @@ public class PlayerMovement : MonoBehaviour
     public float deathTime;
     public GameObject parentPlayer;
 
-
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
-
     {
         activeMoveSpeed = moveSpeed;
-
-
-
-
     }
 
     void Update()
     {
-
-
-     
-
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
 
         Move();
@@ -264,6 +259,8 @@ public class PlayerMovement : MonoBehaviour
             playerHealth = 0;
            
         }
+
+        
 
     }
 
