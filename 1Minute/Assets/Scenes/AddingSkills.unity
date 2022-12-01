@@ -1424,10 +1424,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1609707599, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: ground.m_Bits
-      value: 2304
-      objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1548,6 +1544,82 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e992cc0b4266744dfadb01204eaca900, type: 3}
+--- !u!1 &5263932694098102304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+  m_PrefabInstance: {fileID: 6910841790856131245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5263932694098102320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263932694098102304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29c57383374a4b5a84965a1a241feb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &6910841790856131245
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_Name
+      value: 'BallBombPowerUp '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
 --- !u!1001 &7033192347771386242
 PrefabInstance:
   m_ObjectHideFlags: 0

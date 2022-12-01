@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
+    public static BallController instance;
+
     public float moveSpeed = 10f;
     public Rigidbody2D rb;
 
@@ -19,8 +21,14 @@ public class BallController : MonoBehaviour
     public GameObject bomb;
 
     private bool isGrounded;
+    public bool ballBombUnlocked = false;
 
     Vector2 moveInput;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -33,12 +41,12 @@ public class BallController : MonoBehaviour
 
         Move();
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.J))
+        if(Input.GetKeyDown(KeyCode.J) && ballBombUnlocked)
         {
             Instantiate(bomb, bombPosition.position, bomb.transform.rotation);
         }

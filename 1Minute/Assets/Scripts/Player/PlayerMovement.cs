@@ -115,15 +115,13 @@ public class PlayerMovement : MonoBehaviour
             SwitchBullet();
         }
 
-<<<<<<< Updated upstream
         if(playerHealth == 0)
         {
             StartCoroutine(DeathSpawn());
         }
-=======
         animator.SetBool("isGrounded", isGrounded);
     }
->>>>>>> Stashed changes
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -212,11 +210,7 @@ public class PlayerMovement : MonoBehaviour
         activeMoveSpeed = 0f;
 
         yield return new WaitForSeconds(deathTime);
-<<<<<<< Updated upstream
-    
-=======
 
->>>>>>> Stashed changes
         Destroy(parentPlayer);
     }
 

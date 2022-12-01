@@ -172,7 +172,7 @@ MonoBehaviour:
   jumpForce: 28
   ground:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 2304
   groundCheck: {fileID: 6499128964651587190}
   firePoint: {fileID: 6499128966473771299}
   bullet: {fileID: 88653587212432459, guid: afcb8770a2e7d40cba0d6dec17a44a11, type: 3}
@@ -180,6 +180,7 @@ MonoBehaviour:
   - {fileID: 88653587212432459, guid: afcb8770a2e7d40cba0d6dec17a44a11, type: 3}
   - {fileID: 88653587212432459, guid: 35977b32271d24f7898a3ad603dfbbfd, type: 3}
   standing: {fileID: 6499128965564339055}
+  doubleJumpUnlocked: 0
   dashLength: 0.5
   dashCooldown: 1
   dashSpeed: 15
@@ -309,7 +310,7 @@ GameObject:
   - component: {fileID: 588495255}
   m_Layer: 0
   m_Name: Player Ball
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -440,6 +441,7 @@ MonoBehaviour:
   bombPosition: {fileID: 498603609009354387}
   animator: {fileID: 8874340435059145616}
   bomb: {fileID: 2758053853593681430, guid: e1c28d8ecb26b41bcbfaec2fbe746ac7, type: 3}
+  ballBombUnlocked: 0
 --- !u!1 &9048287239045344447
 GameObject:
   m_ObjectHideFlags: 0
