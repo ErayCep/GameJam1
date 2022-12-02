@@ -52215,6 +52215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BallBombPowerUp '
       objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
