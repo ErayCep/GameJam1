@@ -55,6 +55,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canDoubleJump = true;
 
+    public LayerMask market;
+    public bool isOnMarket;
+
     //Storage another scene
     RealMoney RealCashObject;
  
@@ -80,11 +83,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
-  
-
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
+        isOnMarket = Physics2D.OverlapCircle(groundCheck.position, checkRadius, market);
 
         Move();
 

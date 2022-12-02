@@ -8,6 +8,7 @@ public class BossHealthController : MonoBehaviour
     public static BossHealthController instance;
     public Slider healthSlider;
 
+    public GameObject endDoor;
 
     public int currentHealth = 30;
 
@@ -40,6 +41,7 @@ public class BossHealthController : MonoBehaviour
             currentHealth = 0;
 
             boss.EndBattle();
+            endDoor.SetActive(false);
         }
 
         healthSlider.value = currentHealth;

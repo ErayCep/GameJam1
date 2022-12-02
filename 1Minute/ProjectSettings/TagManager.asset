@@ -12,6 +12,7 @@ TagManager:
   - BallUnlock
   - BallBomb
   - DoubleJump
+  - ShopActivator
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - SecondText
   - Destructible
   - Boss Shot
-  - 
+  - ShopActivator
   - 
   - 
   - 

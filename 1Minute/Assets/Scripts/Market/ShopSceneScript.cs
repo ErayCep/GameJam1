@@ -14,7 +14,7 @@ public class ShopSceneScript : MonoBehaviour
   
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M) && PlayerMovement.instance.isOnMarket == true)
             {
             SceneManager.LoadScene(LoadSceneQueue);
 
