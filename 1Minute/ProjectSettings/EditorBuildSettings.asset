@@ -9,8 +9,20 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/MenuScene/MainMenu.unity
+    guid: 531196ad1d1b41a4e9622e9711bd56a8
+  - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 544696357c87e477e9599c5c15d80641
+  - enabled: 1
+    path: Assets/Scenes/MenuScene/PauseMenu.unity
+    guid: 25e639576ca5e6f43b048dff5d2963e2
+  - enabled: 1
+    path: Assets/Scenes/MenuScene/ControlsMainMenu 1.unity
+    guid: ac3c824abff365b4ca655c6644d52258
+  - enabled: 1
+    path: Assets/Scenes/MenuScene/ControlsMenu.unity
+    guid: b189d071398aa2e4abb6fac723fc68f6
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: f4e8fa2f988338645b1fccc4ccc290b4
