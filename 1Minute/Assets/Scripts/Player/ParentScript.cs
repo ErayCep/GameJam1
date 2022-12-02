@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ParentScript : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class ParentScript : MonoBehaviour
 
     Rigidbody2D ManRigidBody;
     public bool FaceRight = true;
+
+    public Slider slider;
 
     public GameObject standing, ball;
     public float waitToBall;
@@ -23,6 +26,8 @@ public class ParentScript : MonoBehaviour
     void Start()
     {
         ManRigidBody = GetComponent<Rigidbody2D>();
+        slider.maxValue = PlayerMovement.instance.playerHealth;
+        slider.value = PlayerMovement.instance.playerHealth;
     }
 
     void Update()

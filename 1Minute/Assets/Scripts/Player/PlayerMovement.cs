@@ -48,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
 
     //Death
     // Player Health
-    public float playerHealth;
+    public float playerHealth = 100f;
+    private float maxHealth = 100f;
     public bool isDead = false;
     public float deathTime;
     public GameObject parentPlayer;
@@ -76,9 +77,6 @@ public class PlayerMovement : MonoBehaviour
         RealCashObject = FindObjectOfType<RealMoney>();
 
         playerHealth = RealCashObject.GetComponent<RealMoney>().playerHealthStore;
-
-
-
     }
 
     void Update()
@@ -219,6 +217,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerHealth - damageToPlayer >= 0)
         {
             playerHealth -= damageToPlayer;
+            ParentScript.instance.slider.value = playerHealth;
         }
         else
         {

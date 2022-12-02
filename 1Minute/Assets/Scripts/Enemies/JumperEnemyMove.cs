@@ -33,7 +33,7 @@ public class JumperEnemyMove : MonoBehaviour
 
     //Damage
     public float enemyHealth;
-    public float damageToPlayer;
+    public float damageToPlayer = 5f;
     bool isColliderBusy = false;
     private bool tek_kullanma = true;
 
