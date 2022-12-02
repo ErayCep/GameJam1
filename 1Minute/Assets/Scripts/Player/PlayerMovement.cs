@@ -58,8 +58,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canDoubleJump = true;
 
     //Storage another scene
-  //  RealMoney RealMoneyObject;
-   // public float playerHealthTo;
+    RealMoney RealCashObject;
+ 
 
     private void Awake()
     {
@@ -72,17 +72,18 @@ public class PlayerMovement : MonoBehaviour
     {
         activeMoveSpeed = moveSpeed;
 
-        //RealMoneyObject = FindObjectOfType<RealMoney>();
+        RealCashObject = FindObjectOfType<RealMoney>();
 
-        //playerHealthTo = RealMoneyObject.GetComponent<RealMoney>().playerHealthStore;
+        playerHealth = RealCashObject.GetComponent<RealMoney>().playerHealthStore;
 
-     
+
+
     }
 
     void Update()
     {
 
-        //RealMoneyObject.GetComponent<RealMoney>().playerHealthStore = playerHealth;
+  
 
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, ground);
