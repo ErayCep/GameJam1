@@ -778,7 +778,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controls
+  m_text: '(C)
+
+    Controls'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: db78acb023f39cd419b795a2769eedf2, type: 2}
   m_sharedMaterial: {fileID: -3932871522449339544, guid: db78acb023f39cd419b795a2769eedf2, type: 2}
@@ -1319,7 +1321,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quit
+  m_text: '(Q)
+
+    Quit
 
 '
   m_isRightToLeft: 0
@@ -1540,7 +1544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -743.9387, y: -540.4498}
+  m_AnchoredPosition: {x: -743.9387, y: -470}
   m_SizeDelta: {x: 383.8029, y: 96.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395129074
