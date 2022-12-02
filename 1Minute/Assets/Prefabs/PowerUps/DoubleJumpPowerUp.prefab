@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 237451234564306613}
   - component: {fileID: 237451234564306612}
   - component: {fileID: 237451234564306619}
-  - component: {fileID: 237451234564306615}
   - component: {fileID: 237451234564306614}
+  - component: {fileID: 603294542932559267}
   m_Layer: 0
   m_Name: DoubleJumpPowerUp
   m_TagString: BallUnlock
@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &237451234564306612
 SpriteRenderer:
@@ -103,18 +103,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.71875
---- !u!114 &237451234564306615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237451234564306618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 701482f18f8d44e0482e6f963c2cee24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &237451234564306614
 Animator:
   serializedVersion: 4
@@ -135,3 +123,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &603294542932559267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237451234564306618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5bd23d102394459b6efef070a25100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

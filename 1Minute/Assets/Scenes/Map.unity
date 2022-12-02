@@ -47865,14 +47865,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7026757346520367514, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026757346520367514, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.02
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
@@ -48634,7 +48626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realGold: 0
-  ballBombUnlockedload: 0
+  playerHealthStore: 0
 --- !u!4 &1532805767
 Transform:
   m_ObjectHideFlags: 0

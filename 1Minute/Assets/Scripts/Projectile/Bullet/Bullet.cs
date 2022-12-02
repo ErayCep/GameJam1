@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
     public float damageToEnemy;
     public int damageToBoss = 5;
     bool isColliderBusy = false;
+    private int damageToWalker = 10;
 
     public GameObject impact;
 
@@ -53,10 +54,13 @@ public class Bullet : MonoBehaviour
             StartCoroutine(flashInjureEnemy());
         }
 
+        if(other.tag == "WanderEnemy")
+        {
+            other.GetComponent<WalkerHealthController>().TakeDamage(damageToWalker);
+        }
+
         IEnumerator flashInjureEnemy()
         {
-
-
             if (other.tag == "Enemy" && !(enemy.isDeadEnemy))
             {
                 other.GetComponent<SpriteRenderer>().color = Color.red;
@@ -64,14 +68,10 @@ public class Bullet : MonoBehaviour
                 yield return new WaitForSeconds(0.2f);
 
                 other.GetComponent<SpriteRenderer>().color = Color.white;
-
             }
-
         }
 
-  //    GetComponent<SpriteRenderer>().color = Color.red;
 
-//=======
         if (other.tag == "Boss")
         {
             BossHealthController.instance.TakeDamage(damage: damageToBoss);
@@ -80,10 +80,15 @@ public class Bullet : MonoBehaviour
         Instantiate(impact, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-//>>>>>>> Stashed changes
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if(other.transform.tag == "WanderEnemy")
+        {
+            other.transform.GetComponent<WalkerHealthController>().TakeDamage(damageToWalker);
+        }
+
         Instantiate(impact, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
@@ -95,7 +100,5 @@ public class Bullet : MonoBehaviour
         {
             isColliderBusy = false;
         }
-
-        // B U L L E T    R E D
     }
 }
