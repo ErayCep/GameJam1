@@ -8,6 +8,9 @@ public class RealMoney : MonoBehaviour
     public float realGold ;
 
     public float playerHealthStore;
+
+    public float bulletDamageStore;
+    public int bulletBossDamageStore;
    // public bool ballBombUnlockedload;
 
     public static RealMoney Instance;
@@ -32,5 +35,13 @@ public class RealMoney : MonoBehaviour
     
     
     }
+
+
+
+
+
+
+
+
 
 }

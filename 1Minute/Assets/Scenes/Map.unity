@@ -53104,7 +53104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realGold: 0
-  playerHealthStore: 0
+  playerHealthStore: 150
+  bulletDamageStore: 5
+  bulletBossDamageStore: 1
 --- !u!4 &1532805767
 Transform:
   m_ObjectHideFlags: 0
@@ -54037,11 +54039,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.79
+      value: 29.01
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256189, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_LocalPosition.z

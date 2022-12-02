@@ -363,6 +363,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainSceneQueue: 0
+  healtCost: 20
+  extraHealt: 60
+  bulletCost: 10
+  extraBossDamage: 5
+  extraBulletDamage: 20
 --- !u!4 &449758072
 Transform:
   m_ObjectHideFlags: 0
