@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class BallPowerUp : MonoBehaviour
 {
+    RealMoney RealMoneyObject;
+
+    private void Start()
+    {
+        RealMoneyObject = FindObjectOfType<RealMoney>();
+        ParentScript.instance.ballUnlocked  = RealMoneyObject.GetComponent<RealMoney>().ballStore;
+    }
     void Update()
     {
         if(ParentScript.instance.ballUnlocked == true)
@@ -19,6 +26,7 @@ public class BallPowerUp : MonoBehaviour
         {
             Destroy(gameObject);
             ParentScript.instance.ballUnlocked = true;
+            RealMoneyObject.GetComponent<RealMoney>().ballStore= true;
         }
     }
 }

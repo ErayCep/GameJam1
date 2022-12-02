@@ -11,7 +11,10 @@ public class RealMoney : MonoBehaviour
 
     public float bulletDamageStore;
     public int bulletBossDamageStore;
-   // public bool ballBombUnlockedload;
+
+    public bool ballStore;
+    public bool ballBombStore;
+    public bool doubleJumpStore ;
 
     public static RealMoney Instance;
 
@@ -36,7 +39,7 @@ public class RealMoney : MonoBehaviour
     
     }
 
-
+ 
 
 
 
