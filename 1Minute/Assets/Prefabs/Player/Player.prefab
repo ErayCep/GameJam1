@@ -106,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: -3104709011019773545, guid: b6cbda95cd03a02438614c563174d494, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 6499128965572256178}
   moveSpeed: 10
+  damageToPlayer: 10
   animator: {fileID: 6499128965564339050}
   jumpForce: 28
   isGrounded: 0
@@ -246,7 +247,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 66c49127085a1401a8d3caf8a2e95da3, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &572978350
 MonoBehaviour:
@@ -371,7 +372,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 5148424761635712751, guid: 09f3889801899e7438334d6231bec1e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -439,6 +440,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
+  maxHealth: 100
   bombPosition: {fileID: 498603609009354387}
   animator: {fileID: 8874340435059145616}
   bomb: {fileID: 2758053853593681430, guid: e1c28d8ecb26b41bcbfaec2fbe746ac7, type: 3}
