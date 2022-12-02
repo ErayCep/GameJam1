@@ -6,18 +6,27 @@ using UnityEngine.SceneManagement;
 public class ShopSceneScript : MonoBehaviour
 {
     public int LoadSceneQueue;
-    void Start()
-    {
-        
-    }
-
+    
+    public GameObject ShopScene;
   
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M) && PlayerMovement.instance.isOnMarket == true)
+       
+        if(PlayerMovement.instance.isOnMarket == true)
+        {
+          ShopScene.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.M) )
             {
-            SceneManager.LoadScene(LoadSceneQueue);
+                SceneManager.LoadScene(LoadSceneQueue);
 
             }
+        }
+
+        if (PlayerMovement.instance.isOnMarket == false)
+        {
+            ShopScene.SetActive(false);
+            
+        }
+
     }
 }
