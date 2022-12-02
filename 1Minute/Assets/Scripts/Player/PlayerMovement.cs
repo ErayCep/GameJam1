@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 10f;
     Vector2 moveInput;
 
+    public float damageToPlayer = 10f;
+
     //Animation
     public Animator animator;
 
@@ -142,6 +144,11 @@ public class PlayerMovement : MonoBehaviour
         if(other.tag == "BallUnlock")
         {
             ParentScript.instance.ballUnlocked = true;
+        }
+
+        if(other.tag == "Boss")
+        {
+            getDamage(damageToPlayer);
         }
     }
 

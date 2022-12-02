@@ -12,6 +12,8 @@ public class WalkerEnemy : MonoBehaviour
     private float waitCounter;
     private int patrolIndex;
 
+    public float damageToPlayer = 5f;
+
     public float jumpForce;
 
     void Start()
@@ -71,6 +73,14 @@ public class WalkerEnemy : MonoBehaviour
         if(other.tag == "Player")
         {
             PlayerMovement.instance.getDamage(5f);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.transform.tag == "Player")
+        {
+            PlayerMovement.instance.getDamage(damageToPlayer);
         }
     }
 }

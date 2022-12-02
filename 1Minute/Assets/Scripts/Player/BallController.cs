@@ -15,6 +15,9 @@ public class BallController : MonoBehaviour
     public float checkRadius = 0.4f;
     public LayerMask ground;
 
+    private float currentHealth;
+    public float maxHealth = 100f;
+
     public Transform bombPosition;
 
     public Animator animator;
@@ -32,7 +35,7 @@ public class BallController : MonoBehaviour
 
     void Start()
     {
-        
+        currentHealth = maxHealth;
     }
 
     void Update()

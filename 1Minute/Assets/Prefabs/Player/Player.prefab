@@ -170,6 +170,7 @@ MonoBehaviour:
   moveSpeed: 10
   animator: {fileID: 6499128965564339050}
   jumpForce: 28
+  isGrounded: 0
   ground:
     serializedVersion: 2
     m_Bits: 2304
@@ -184,7 +185,7 @@ MonoBehaviour:
   dashLength: 0.5
   dashCooldown: 1
   dashSpeed: 15
-  playerHealth: 100
+  playerHealth: 10
   isDead: 0
   deathTime: 2
   parentPlayer: {fileID: 6499128965572256179}
@@ -224,7 +225,7 @@ Transform:
   - {fileID: 8655350997603783134}
   - {fileID: 498603609009354387}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6499128965572256178
 Rigidbody2D:
@@ -263,7 +264,7 @@ MonoBehaviour:
   standing: {fileID: 6499128965564339055}
   ball: {fileID: 6563979620454065786}
   waitToBall: 0.5
-  ballUnlocked: 0
+  ballUnlocked: 1
 --- !u!1 &6499128966473771296
 GameObject:
   m_ObjectHideFlags: 0

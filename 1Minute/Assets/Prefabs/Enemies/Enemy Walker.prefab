@@ -171,7 +171,7 @@ Transform:
   - {fileID: 7026757346034936138}
   - {fileID: 7026757346372883058}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7026757346241536680
 CircleCollider2D:
@@ -230,6 +230,7 @@ MonoBehaviour:
   animator: {fileID: 7026757346034936136}
   waitAtPoints: 1
   moveSpeed: 4
+  damageToPlayer: 5
   jumpForce: 10
 --- !u!114 &3912806723106148105
 MonoBehaviour:

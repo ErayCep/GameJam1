@@ -18,6 +18,8 @@ public class BossBattle : MonoBehaviour
     public Animator animator;
     public Transform boss;
 
+    public float damageToPlayer = 10f;
+
     public float moveSpeed;
 
     void Start()
