@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class BallBombPowerUp : MonoBehaviour
 {
-    public BallController ball;
-
     void Update()
     {
-        if(ball.ballBombUnlocked == true)
+        if(BallController.instance.ballBombUnlocked == true)
         {
             gameObject.SetActive(false);
         }
@@ -19,7 +17,7 @@ public class BallBombPowerUp : MonoBehaviour
         if(other.tag == "Player")
         {
             Destroy(gameObject);
-            ball.ballBombUnlocked = true;
+            BallController.instance.ballBombUnlocked = true;
         }
     }
 }
