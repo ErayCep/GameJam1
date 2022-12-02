@@ -79,6 +79,7 @@ public class BossBattle : MonoBehaviour
                     boss.position = spawnPoints[ Random.Range(0, spawnPoints.Length)].position;
                     boss.gameObject.SetActive(true);
                     activeCounter = activeTime;
+                    shotCounter = timeBetweenShots1;
                 }
             }
         }
@@ -102,6 +103,23 @@ public class BossBattle : MonoBehaviour
                     {
                         fadeCounter = fadeoutTime;
                         animator.SetTrigger("vanish");
+                    }
+
+                    shotCounter -= Time.deltaTime;
+
+                    if (shotCounter <= 0)
+                    {
+                        if(BossHealthController.instance.currentHealth > threshold2)
+                        {
+                            shotCounter = timeBetweenShots1;
+                        }
+                        else
+                        {
+                            shotCounter = timeBetweenShots2;
+                        }
+                        
+
+                        Instantiate(shot, shotPoint.position, Quaternion.identity);
                     }
                 }
                 else if (fadeCounter > 0)
@@ -131,6 +149,15 @@ public class BossBattle : MonoBehaviour
                         }
 
                         boss.gameObject.SetActive(true);
+
+                        if (BossHealthController.instance.currentHealth > threshold2)
+                        {
+                            shotCounter = timeBetweenShots1;
+                        }
+                        else
+                        {
+                            shotCounter = timeBetweenShots2;
+                        }
 
                     }
                 }

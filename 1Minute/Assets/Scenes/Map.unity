@@ -53452,6 +53452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Battle
       objectReference: {fileID: 0}
+    - target: {fileID: 1082691917937834630, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1082691917937834648, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -53495,6 +53499,14 @@ PrefabInstance:
     - target: {fileID: 1082691917937834648, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082691918742840883, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082691918742840883, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -58050,6 +58062,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 572978350, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: ballBombUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5729711304245377152, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_IsActive
       value: 0
