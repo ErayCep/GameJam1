@@ -53821,9 +53821,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 821072068728022077, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
 --- !u!4 &1107350498 stripped
@@ -57168,6 +57169,12 @@ MonoBehaviour:
   isDestroyedJumper2: 0
   isDeadJumper3: 0
   isDestroyedJumper3: 0
+  isDeadJumper4: 0
+  isDestroyedJumper4: 0
+  isDeadJumper5: 0
+  isDestroyedJumper5: 0
+  isDeadJumper6: 0
+  isDestroyedJumper6: 0
   coinstext: {fileID: 973901664}
 --- !u!4 &1786045645
 Transform:
