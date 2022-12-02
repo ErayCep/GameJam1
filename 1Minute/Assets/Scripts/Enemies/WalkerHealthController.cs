@@ -11,6 +11,7 @@ public class WalkerHealthController : MonoBehaviour
 
     //dead
     public bool isDeadWalker = false;
+
     void Start()
     {
         currentHealth = maxHealth;

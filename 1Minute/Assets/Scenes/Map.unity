@@ -499,7 +499,7 @@ MonoBehaviour:
   modalsonuc: 0
   isDeadEnemy: 0
   enemyHealth: 100
-  damageToPlayer: 20
+  damageToPlayer: 30
   yokolma_time: 1.2
   injurerPlayer: {fileID: 1943733492}
 --- !u!4 &70216396
@@ -54089,6 +54089,14 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: damageToPlayer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: injurerPlayerWalker
+      value: 
+      objectReference: {fileID: 1943733492}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker (2)
@@ -54365,7 +54373,7 @@ MonoBehaviour:
   modalsonuc: 0
   isDeadEnemy: 0
   enemyHealth: 100
-  damageToPlayer: 20
+  damageToPlayer: 30
   yokolma_time: 1.2
   injurerPlayer: {fileID: 1943733492}
 --- !u!4 &1201859911
@@ -55289,6 +55297,14 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: damageToPlayer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: injurerPlayerWalker
+      value: 
+      objectReference: {fileID: 1943733492}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker (1)
@@ -57072,7 +57088,7 @@ MonoBehaviour:
   modalsonuc: 0
   isDeadEnemy: 0
   enemyHealth: 100
-  damageToPlayer: 20
+  damageToPlayer: 30
   yokolma_time: 1.2
   injurerPlayer: {fileID: 1943733492}
 --- !u!4 &1765997248
@@ -58593,6 +58609,14 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: damageToPlayer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: injurerPlayerWalker
+      value: 
+      objectReference: {fileID: 1943733492}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker
@@ -58975,6 +58999,14 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: damageToPlayer
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: injurerPlayerWalker
+      value: 
+      objectReference: {fileID: 1943733492}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker (3)

@@ -15,6 +15,9 @@ public class WalkerEnemy : MonoBehaviour
     public float damageToPlayer = 5f;
 
     public float jumpForce;
+    
+    //injure
+    public GameObject injurerPlayerWalker;
 
     void Start()
     {
@@ -68,11 +71,25 @@ public class WalkerEnemy : MonoBehaviour
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
     }
 
+    IEnumerator flashInjure()
+    {
+        injurerPlayerWalker.GetComponent<SpriteRenderer>().material.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+
+        injurerPlayerWalker.GetComponent<SpriteRenderer>().material.color = Color.white;
+
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
-            PlayerMovement.instance.getDamage(5f);
+
+            if (injurerPlayerWalker.activeSelf)
+            {
+                PlayerMovement.instance.getDamage(30f);
+            }
+            StartCoroutine(flashInjure());
+    
         }
     }
 
