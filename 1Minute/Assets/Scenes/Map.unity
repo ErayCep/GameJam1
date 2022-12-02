@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 219635348}
     m_Modifications:
+    - target: {fileID: 237451234564306612, guid: e7e8677a6d05c4bb7bba893246241f2c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 237451234564306613, guid: e7e8677a6d05c4bb7bba893246241f2c, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -54001,6 +54005,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1649728253196188291, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
       propertyPath: m_Name
       value: 'BallBombPowerUp '
@@ -57933,6 +57941,10 @@ PrefabInstance:
     - target: {fileID: 7033192346650530340, guid: 4e4913a10a4234b63bcf0f84af89b457, type: 3}
       propertyPath: m_Name
       value: BallPowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033192346650530346, guid: 4e4913a10a4234b63bcf0f84af89b457, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7033192346650530347, guid: 4e4913a10a4234b63bcf0f84af89b457, type: 3}
       propertyPath: m_RootOrder
