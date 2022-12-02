@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
 
     //Animation
     public Animator animator;
+
+    public GameObject ballText;
+    public GameObject ballBombText;
+    public BallController ball;
 
     //Jump variables
     public float jumpForce = 10f;
@@ -144,6 +149,14 @@ public class PlayerMovement : MonoBehaviour
         if(other.tag == "BallUnlock")
         {
             ParentScript.instance.ballUnlocked = true;
+            ballText.SetActive(true);
+            Destroy(ballText, 4);
+        }
+
+        if(other.tag == "BallBomb")
+        {
+            ballBombText.SetActive(true);
+            Destroy(ballBombText, 3);
         }
 
         if(other.tag == "Boss")

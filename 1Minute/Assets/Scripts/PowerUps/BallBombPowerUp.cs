@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class BallBombPowerUp : MonoBehaviour
 {
+    public BallController ball;
+
+    void Update()
+    {
+        if(ball.ballBombUnlocked == true)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
             Destroy(gameObject);
-            BallController.instance.ballBombUnlocked = true;
+            ball.ballBombUnlocked = true;
         }
     }
 }
@@ -31,7 +41,7 @@ public class BallBombPowerUp : MonoBehaviour
 //    if (!(ballBombObject.GetComponent<RealMoney>().ballBombUnlockedload))
 //    {
 //        BallController.instance.ballBombUnlocked = true;
-//        Debug.Log("ben calýsýyom ha");
+//        Debug.Log("ben cal?s?yom ha");
 //    }
 //}
 //private void OnTriggerEnter2D(Collider2D other)
