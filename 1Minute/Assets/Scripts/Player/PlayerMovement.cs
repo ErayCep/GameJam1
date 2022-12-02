@@ -20,8 +20,6 @@ public class PlayerMovement : MonoBehaviour
     //Animation
     public Animator animator;
 
-    public GameObject ballText;
-    public GameObject ballBombText;
     public BallController ball;
 
     //Jump variables
@@ -150,14 +148,6 @@ public class PlayerMovement : MonoBehaviour
         if(other.tag == "BallUnlock")
         {
             ParentScript.instance.ballUnlocked = true;
-            ballText.SetActive(true);
-            Destroy(ballText, 4);
-        }
-
-        if(other.tag == "BallBomb")
-        {
-            ballBombText.SetActive(true);
-            Destroy(ballBombText, 3);
         }
 
         if(other.tag == "Boss")
