@@ -14,6 +14,7 @@ public class Money : MonoBehaviour
     public float RealMoneyCome;
 
     public float jumperGold = 10f;
+    public float walkerGold = 20f;
 
     public GameObject heroObject;
 
@@ -34,7 +35,25 @@ public class Money : MonoBehaviour
     public bool isDeadJumper2 = false;
     public bool isDestroyedJumper2 = false;
     bool waitEarn2 = true;
-    
+    //WALKER
+    public bool isDeadJumper3 = false;
+    public bool isDestroyedJumper3 = false;
+    bool waitEarn3 = true;
+    //WALKER1
+    public bool isDeadJumper4 = false;
+    public bool isDestroyedJumper4 = false;
+    bool waitEarn4 = true;
+    //WALKER2
+    public bool isDeadJumper5 = false;
+    public bool isDestroyedJumper5 = false;
+    bool waitEarn5 = true;
+    //WALKER3
+    public bool isDeadJumper6 = false;
+    public bool isDestroyedJumper6 = false;
+    bool waitEarn6 = true;
+
+
+
     //TextMeshPro
     public TextMeshProUGUI coinstext;
 
@@ -56,6 +75,10 @@ public class Money : MonoBehaviour
         EarnCoinJumper();
         EarnCoinJumper1();
         EarnCoinJumper2();
+        EarnCoinJumper3();
+        EarnCoinJumper4();
+        EarnCoinJumper5();
+        EarnCoinJumper6();
 
 
     }
@@ -209,7 +232,192 @@ public class Money : MonoBehaviour
 
 
     }
+    //     W  A  L  K  E  R
 
+
+    IEnumerator isDeadJumperWait3()
+    {
+        coinObject[0].SetActive(true);
+
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
+        isDestroyedJumper3 = true;
+
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
+    }
+    void EarnCoinJumper3()
+    {
+
+        if (!isDeadJumper3)
+        {
+            isDeadJumper3 = objectJumper[3].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
+        else
+        {
+
+        }
+
+        if (isDeadJumper3 &&  waitEarn3 && !isDestroyedJumper3)
+        {
+
+
+
+            StartCoroutine(isDeadJumperWait3());
+
+        }
+        if (isDestroyedJumper3 && waitEarn3)
+        {
+         
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
+            waitEarn3 = false;
+        }
+
+
+    }
+
+
+
+    IEnumerator isDeadJumperWait4()
+    {
+        coinObject[0].SetActive(true);
+
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
+        isDestroyedJumper4 = true;
+
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
+    }
+    void EarnCoinJumper4()
+    {
+
+        if (!isDeadJumper4)
+        {
+            isDeadJumper4 = objectJumper[4].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
+        else
+        {
+
+        }
+
+        if (isDeadJumper4 &&  waitEarn4 && !isDestroyedJumper4)
+        {
+
+
+
+            StartCoroutine(isDeadJumperWait4());
+
+        }
+        if (isDestroyedJumper4 && waitEarn4)
+        {
+
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
+            waitEarn4 = false;
+        }
+
+
+    }
+
+
+    IEnumerator isDeadJumperWait5()
+    {
+        coinObject[0].SetActive(true);
+
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
+        isDestroyedJumper5 = true;
+
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
+    }
+    void EarnCoinJumper5()
+    {
+
+        if (!isDeadJumper5)
+        {
+            isDeadJumper5 = objectJumper[5].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
+        else
+        {
+
+        }
+
+        if (isDeadJumper5 &&  waitEarn5 && !isDestroyedJumper5)
+        {
+
+
+
+            StartCoroutine(isDeadJumperWait5());
+
+        }
+        if (isDestroyedJumper5 && waitEarn5)
+        {
+
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
+            waitEarn5 = false;
+        }
+
+
+    }
+
+
+    IEnumerator isDeadJumperWait6()
+    {
+        coinObject[0].SetActive(true);
+
+
+        yield return new WaitForSeconds(1.3f);
+        coinstext.color = new Color32(255, 255, 255, 255);
+        isDestroyedJumper6 = true;
+
+        yield return new WaitForSeconds(15f);
+        coinstext.color = new Color32(255, 255, 255, 0);
+        coinObject[0].SetActive(false);
+
+    }
+    void EarnCoinJumper6()
+    {
+
+        if (!isDeadJumper6)
+        {
+            isDeadJumper6 = objectJumper[6].GetComponent<JumperEnemyMove>().isDeadEnemy;
+        }
+        else
+        {
+
+        }
+
+        if (isDeadJumper6 &&  waitEarn6 && !isDestroyedJumper6)
+        {
+
+
+
+            StartCoroutine(isDeadJumperWait6());
+
+        }
+        if (isDestroyedJumper6 && waitEarn3)
+        {
+
+            RealMoneyCome += jumperGold;
+            RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
+            waitEarn6 = false;
+        }
+
+
+    }
 
 
 

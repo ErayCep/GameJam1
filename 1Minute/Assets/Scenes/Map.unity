@@ -758,6 +758,11 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &169742761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+  m_PrefabInstance: {fileID: 1986596169}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &185880238
 GameObject:
   m_ObjectHideFlags: 0
@@ -53985,6 +53990,11 @@ Transform:
   m_Father: {fileID: 1765997248}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150909940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+  m_PrefabInstance: {fileID: 4363516987600442351}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201859904
 GameObject:
   m_ObjectHideFlags: 0
@@ -55949,6 +55959,11 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1505445298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+  m_PrefabInstance: {fileID: 1397625898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1508568662
 GameObject:
   m_ObjectHideFlags: 0
@@ -57001,6 +57016,11 @@ Transform:
   m_Father: {fileID: 1201859911}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1785296469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+  m_PrefabInstance: {fileID: 1128937569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1786045639
 GameObject:
   m_ObjectHideFlags: 0
@@ -57127,6 +57147,7 @@ MonoBehaviour:
   gold: 0
   RealMoneyCome: 0
   jumperGold: 10
+  walkerGold: 20
   heroObject: {fileID: 1943733492}
   coinObject:
   - {fileID: 1971302136}
@@ -57135,12 +57156,18 @@ MonoBehaviour:
   - {fileID: 1765997241}
   - {fileID: 70216389}
   - {fileID: 1201859904}
+  - {fileID: 169742761}
+  - {fileID: 1505445298}
+  - {fileID: 1785296469}
+  - {fileID: 1150909940}
   isDeadJumper: 0
   isDestroyedJumper: 0
   isDeadJumper1: 0
   isDestroyedJumper1: 0
   isDeadJumper2: 0
   isDestroyedJumper2: 0
+  isDeadJumper3: 0
+  isDestroyedJumper3: 0
   coinstext: {fileID: 973901664}
 --- !u!4 &1786045645
 Transform:
