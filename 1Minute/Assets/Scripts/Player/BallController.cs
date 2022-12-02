@@ -49,7 +49,7 @@ public class BallController : MonoBehaviour
             Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.J) && ballBombUnlocked)
+        if(Input.GetKeyDown(KeyCode.J) && ParentScript.instance.ballBombUnlocked == true)
         {
             Instantiate(bomb, bombPosition.position, bomb.transform.rotation);
         }

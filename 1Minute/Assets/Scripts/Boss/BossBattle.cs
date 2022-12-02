@@ -20,6 +20,11 @@ public class BossBattle : MonoBehaviour
 
     public float damageToPlayer = 10f;
 
+    public float timeBetweenShots1, timeBetweenShots2;
+    private float shotCounter;
+    public GameObject shot;
+    public Transform shotPoint;
+
     public float moveSpeed;
 
     void Start()
@@ -28,6 +33,7 @@ public class BossBattle : MonoBehaviour
         cam.enabled = false;
 
         activeCounter = activeTime;
+        shotCounter = timeBetweenShots1;
     }
 
     void Update()
@@ -44,6 +50,15 @@ public class BossBattle : MonoBehaviour
                 {
                     fadeCounter = fadeoutTime;
                     animator.SetTrigger("vanish");
+                }
+
+                shotCounter -= Time.deltaTime;
+
+                if(shotCounter <= 0)
+                {
+                    shotCounter = timeBetweenShots1;
+
+                    Instantiate(shot, shotPoint.position, Quaternion.identity);
                 }
             }
             else if(fadeCounter > 0)

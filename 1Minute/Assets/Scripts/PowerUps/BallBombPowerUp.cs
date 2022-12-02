@@ -6,7 +6,7 @@ public class BallBombPowerUp : MonoBehaviour
 {
     void Update()
     {
-        if(BallController.instance.ballBombUnlocked == true)
+        if(ParentScript.instance.ballBombUnlocked == true)
         {
             gameObject.SetActive(false);
         }
@@ -17,7 +17,7 @@ public class BallBombPowerUp : MonoBehaviour
         if(other.tag == "Player")
         {
             Destroy(gameObject);
-            BallController.instance.ballBombUnlocked = true;
+            ParentScript.instance.ballBombUnlocked = true;
         }
     }
 }

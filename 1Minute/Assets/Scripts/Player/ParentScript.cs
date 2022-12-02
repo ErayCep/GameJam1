@@ -13,7 +13,7 @@ public class ParentScript : MonoBehaviour
     public float waitToBall;
     private float ballCounter;
 
-    public bool ballUnlocked;
+    public bool ballUnlocked, ballBombUnlocked, doubleJumpUnlocked;
 
     private void Awake()
     {
