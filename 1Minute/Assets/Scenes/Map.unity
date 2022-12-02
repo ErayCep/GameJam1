@@ -52234,7 +52234,7 @@ PrefabInstance:
 <<<<<<< Updated upstream
     - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
 =======
 >>>>>>> Stashed changes
