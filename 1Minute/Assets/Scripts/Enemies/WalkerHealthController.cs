@@ -9,10 +9,32 @@ public class WalkerHealthController : MonoBehaviour
 
     public GameObject walker;
 
+    //dead
+    public bool isDeadWalker = false;
     void Start()
     {
         currentHealth = maxHealth;
     }
+
+    void Update()
+    {
+        StartCoroutine(WalkerDestroy());
+        
+
+    }
+
+
+    IEnumerator WalkerDestroy()
+    {
+        if (currentHealth <= 0)
+        {
+            isDeadWalker = true;
+            yield return new WaitForSeconds(0.1f);
+            gameObject.SetActive(false);
+        }
+    }
+
+
 
     public void TakeDamage(int damage)
     {
@@ -22,7 +44,7 @@ public class WalkerHealthController : MonoBehaviour
         {
             currentHealth = 0;
 
-            gameObject.SetActive(false);
+           
         }
     }
 }

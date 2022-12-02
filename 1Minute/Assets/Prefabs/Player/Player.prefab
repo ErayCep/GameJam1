@@ -288,7 +288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1863005503913174668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -479,9 +479,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 0
   m_Sprite: {fileID: -3104709011019773545, guid: b6cbda95cd03a02438614c563174d494, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -544,6 +544,8 @@ MonoBehaviour:
   damageToPlayer: 10
   animator: {fileID: 6499128965564339050}
   ballText: {fileID: 1733729672144659402}
+  ballBombText: {fileID: 0}
+  ball: {fileID: 0}
   jumpForce: 28
   isGrounded: 0
   ground:
@@ -601,7 +603,7 @@ Transform:
   - {fileID: 498603609009354387}
   - {fileID: 1863005503913174668}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6499128965572256178
 Rigidbody2D:

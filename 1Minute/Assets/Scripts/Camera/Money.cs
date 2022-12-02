@@ -254,7 +254,7 @@ public class Money : MonoBehaviour
 
         if (!isDeadJumper3)
         {
-            isDeadJumper3 = objectJumper[3].GetComponent<JumperEnemyMove>().isDeadEnemy;
+            isDeadJumper3 = objectJumper[3].GetComponent<WalkerHealthController>().isDeadWalker;
         }
         else
         {
@@ -301,7 +301,7 @@ public class Money : MonoBehaviour
 
         if (!isDeadJumper4)
         {
-            isDeadJumper4 = objectJumper[4].GetComponent<JumperEnemyMove>().isDeadEnemy;
+            isDeadJumper4 = objectJumper[4].GetComponent<WalkerHealthController>().isDeadWalker;
         }
         else
         {
@@ -347,7 +347,7 @@ public class Money : MonoBehaviour
 
         if (!isDeadJumper5)
         {
-            isDeadJumper5 = objectJumper[5].GetComponent<JumperEnemyMove>().isDeadEnemy;
+            isDeadJumper5 = objectJumper[5].GetComponent<WalkerHealthController>().isDeadWalker;
         }
         else
         {
@@ -393,7 +393,7 @@ public class Money : MonoBehaviour
 
         if (!isDeadJumper6)
         {
-            isDeadJumper6 = objectJumper[6].GetComponent<JumperEnemyMove>().isDeadEnemy;
+            isDeadJumper6 = objectJumper[6].GetComponent<WalkerHealthController>().isDeadWalker;
         }
         else
         {
@@ -408,7 +408,7 @@ public class Money : MonoBehaviour
             StartCoroutine(isDeadJumperWait6());
 
         }
-        if (isDestroyedJumper6 && waitEarn3)
+        if (isDestroyedJumper6 && waitEarn6)
         {
 
             RealMoneyCome += jumperGold;
