@@ -53183,7 +53183,7 @@ PrefabInstance:
       objectReference: {fileID: 782824540}
     - target: {fileID: 1082691917937834651, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: currentHealth
-      value: 1
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1082691918742840883, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: m_AnchorMax.x
