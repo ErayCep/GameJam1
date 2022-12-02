@@ -642,7 +642,9 @@ MonoBehaviour:
   standing: {fileID: 6499128965564339055}
   ball: {fileID: 6563979620454065786}
   waitToBall: 0.5
-  ballUnlocked: 1
+  ballUnlocked: 0
+  ballBombUnlocked: 0
+  doubleJumpUnlocked: 0
 --- !u!1 &6499128966473771296
 GameObject:
   m_ObjectHideFlags: 0

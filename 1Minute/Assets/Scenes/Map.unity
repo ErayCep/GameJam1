@@ -58090,30 +58090,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 572978350, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: ballBombUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5729711304245377152, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965564339051, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_Color.b
-      value: 0.7647059
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965564339051, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_Color.g
-      value: 0.7647059
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965564339051, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_Color.r
-      value: 0.7647059
-      objectReference: {fileID: 0}
-    - target: {fileID: 6499128965564339051, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_Name
       value: Player
