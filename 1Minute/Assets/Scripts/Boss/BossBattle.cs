@@ -22,19 +22,12 @@ public class BossBattle : MonoBehaviour
 
     public float moveSpeed;
 
-    public float timeBetweenShots1, timeBetweenShots2;
-    private float shotCounter;
-    public GameObject shot;
-    public Transform shotPoint;
-
     void Start()
     {
         cam = FindObjectOfType<SmoothCameraControl>();
         cam.enabled = false;
 
         activeCounter = activeTime;
-
-        shotCounter = timeBetweenShots1;
     }
 
     void Update()
@@ -51,15 +44,6 @@ public class BossBattle : MonoBehaviour
                 {
                     fadeCounter = fadeoutTime;
                     animator.SetTrigger("vanish");
-                }
-
-                shotCounter -= Time.deltaTime;
-
-                if(shotCounter <= 0)
-                {
-                    shotCounter = timeBetweenShots1;
-
-                    Instantiate(shot, shotPoint.position, Quaternion.identity);
                 }
             }
             else if(fadeCounter > 0)
@@ -80,7 +64,6 @@ public class BossBattle : MonoBehaviour
                     boss.position = spawnPoints[ Random.Range(0, spawnPoints.Length)].position;
                     boss.gameObject.SetActive(true);
                     activeCounter = activeTime;
-                    shotCounter = timeBetweenShots1;
                 }
             }
         }
@@ -104,15 +87,6 @@ public class BossBattle : MonoBehaviour
                     {
                         fadeCounter = fadeoutTime;
                         animator.SetTrigger("vanish");
-                    }
-
-                    shotCounter -= Time.deltaTime;
-
-                    if(shotCounter <= 0)
-                    {
-                        shotCounter = timeBetweenShots2;
-
-                        Instantiate(shot, shotPoint.position, Quaternion.identity);
                     }
                 }
                 else if (fadeCounter > 0)
@@ -140,7 +114,6 @@ public class BossBattle : MonoBehaviour
                             targetPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
                             whileBreaker++;
                         }
-                        shotCounter = timeBetweenShots2;
 
                         boss.gameObject.SetActive(true);
 

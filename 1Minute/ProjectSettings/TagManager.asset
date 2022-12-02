@@ -10,8 +10,6 @@ TagManager:
   - ParentPlayer
   - WanderEnemy
   - BallUnlock
-  - DoubleJump
-  - BallBomb
   layers:
   - Default
   - TransparentFX
@@ -25,7 +23,7 @@ TagManager:
   - Boss
   - SecondText
   - Destructible
-  - BossBullet
+  - 
   - 
   - 
   - 
