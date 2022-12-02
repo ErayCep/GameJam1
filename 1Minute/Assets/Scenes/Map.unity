@@ -1695,7 +1695,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -51674,6 +51674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Battle
       objectReference: {fileID: 0}
+    - target: {fileID: 1082691917937834630, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1082691917937834648, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -51717,6 +51721,14 @@ PrefabInstance:
     - target: {fileID: 1082691917937834648, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082691918742840883, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082691918742840883, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -52167,6 +52179,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 219635348}
     m_Modifications:
+    - target: {fileID: 821072068728022077, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1925065568}
     - target: {fileID: 1649728253196188290, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -52215,10 +52231,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BallBombPowerUp '
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
@@ -54025,6 +54044,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1925065568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 588495255, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+  m_PrefabInstance: {fileID: 1943733490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ff9a52948804c2ca2089b7c4f3f1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1943733490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54033,6 +54063,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1609707599, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1925065568}
+    - target: {fileID: 1609707599, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: ballBombText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965564339054, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -43.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499128965564339054, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.41
+      objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_Name
       value: Player

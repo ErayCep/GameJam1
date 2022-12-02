@@ -20,10 +20,6 @@ public class PlayerMovement : MonoBehaviour
     //Animation
     public Animator animator;
 
-    public GameObject ballText;
-    public GameObject ballBombText;
-    public BallController ball;
-
     //Jump variables
     public float jumpForce = 10f;
     public bool isGrounded;                         // private to public
@@ -146,20 +142,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "BallUnlock")
-        {
-            ParentScript.instance.ballUnlocked = true;
-            ballText.SetActive(true);
-            Destroy(ballText, 4);
-        }
-
-        if(other.tag == "BallBomb")
-        {
-            ballBombText.SetActive(true);
-            Destroy(ballBombText, 3);
-        }
-
         if(other.tag == "Boss")
+        {
+            getDamage(damageToPlayer);
+        }
+
+        if(other.tag == "Enemy")
+        {
+            getDamage(damageToPlayer);
+        }
+
+        if(other.tag == "WanderEnemy")
         {
             getDamage(damageToPlayer);
         }

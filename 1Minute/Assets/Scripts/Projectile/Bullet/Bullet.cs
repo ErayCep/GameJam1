@@ -26,12 +26,12 @@ public class Bullet : MonoBehaviour
     JumperEnemyMove enemy;
 
     //Damage Store at Scene
-    RealMoney RealMoneyObject;
+    public RealMoney RealMoneyObject;
     void Start()
     {
         RealMoneyObject = FindObjectOfType<RealMoney>();
-        damageToEnemy  = RealMoneyObject.GetComponent<RealMoney>().bulletDamageStore;
-        damageToBoss = RealMoneyObject.GetComponent<RealMoney>().bulletBossDamageStore;
+        //damageToEnemy  = RealMoneyObject.GetComponent<RealMoney>().bulletDamageStore;
+        //damageToBoss = RealMoneyObject.GetComponent<RealMoney>().bulletBossDamageStore;
 
         rb = GetComponent<Rigidbody2D>();
         
