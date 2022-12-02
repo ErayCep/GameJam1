@@ -56218,8 +56218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realGold: 0
-  playerHealthStore: 150
-  bulletDamageStore: 5
+  playerHealthStore: 30
+  bulletDamageStore: 3
   bulletBossDamageStore: 1
 --- !u!4 &1532805767
 Transform:
