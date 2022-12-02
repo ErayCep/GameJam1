@@ -9,7 +9,7 @@ public class ControlsToMainGame : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.Escape)))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
 
         }
     }

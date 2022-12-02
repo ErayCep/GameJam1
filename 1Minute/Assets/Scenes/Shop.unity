@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd2ecd730ee90d4faa138068bb3b322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainSceneQueue: 0
+  MainSceneQueue: 1
   healtCost: 20
   extraHealt: 60
   bulletCost: 10

@@ -9,7 +9,7 @@ public class controls : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(3);
         }
         //else if (Input.GetKeyDown(KeyCode.Mouse0))
         //{

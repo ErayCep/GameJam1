@@ -10,10 +10,7 @@ public class quit : MonoBehaviour
         {
             Quit();
         }
-        else if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Quit();
-        }
+
     }
         public void Quit()
     {

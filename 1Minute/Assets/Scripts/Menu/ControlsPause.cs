@@ -10,7 +10,7 @@ public class ControlsPause : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.C)))
         {
 
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
 
     }

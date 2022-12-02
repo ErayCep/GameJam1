@@ -9,7 +9,7 @@ public class PauseGame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
     }
     void Update()
