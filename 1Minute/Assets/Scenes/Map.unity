@@ -53821,7 +53821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1649728253196188301, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 821072068728022077, guid: a66783c1e158c476c956d0b716e9d129, type: 3}
@@ -53904,6 +53904,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 2104099239}
     m_Modifications:
+    - target: {fileID: 3912806723106148105, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker (2)
@@ -55100,6 +55104,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 2104099239}
     m_Modifications:
+    - target: {fileID: 3912806723106148105, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker (1)
@@ -58396,6 +58404,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 2104099239}
     m_Modifications:
+    - target: {fileID: 3912806723106148105, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker
@@ -58774,6 +58786,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 2104099239}
     m_Modifications:
+    - target: {fileID: 3912806723106148105, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536683, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_Name
       value: Enemy Walker (3)

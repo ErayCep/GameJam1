@@ -272,7 +272,7 @@ public class Money : MonoBehaviour
         if (isDestroyedJumper3 && waitEarn3)
         {
          
-            RealMoneyCome += jumperGold;
+            RealMoneyCome += walkerGold;
             RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn3 = false;
         }
@@ -319,7 +319,7 @@ public class Money : MonoBehaviour
         if (isDestroyedJumper4 && waitEarn4)
         {
 
-            RealMoneyCome += jumperGold;
+            RealMoneyCome += walkerGold;
             RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn4 = false;
         }
@@ -365,7 +365,7 @@ public class Money : MonoBehaviour
         if (isDestroyedJumper5 && waitEarn5)
         {
 
-            RealMoneyCome += jumperGold;
+            RealMoneyCome += walkerGold;
             RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn5 = false;
         }
@@ -411,7 +411,7 @@ public class Money : MonoBehaviour
         if (isDestroyedJumper6 && waitEarn6)
         {
 
-            RealMoneyCome += jumperGold;
+            RealMoneyCome += walkerGold;
             RealMoneyObject.GetComponent<RealMoney>().realGold = RealMoneyCome;
             waitEarn6 = false;
         }
