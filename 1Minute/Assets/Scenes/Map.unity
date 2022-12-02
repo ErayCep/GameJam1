@@ -343,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56501436}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 24.5, y: 1.2, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,13 +365,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -786,7 +786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122902401}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: -16.1, y: 35.6, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -808,13 +808,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -1048,13 +1048,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -51862,7 +51862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367140659}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: -26.3, y: 27.1, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51884,13 +51884,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -52239,13 +52239,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -52479,13 +52479,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -53037,7 +53037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912358918}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 19, y: -10.9, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53059,13 +53059,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -54456,7 +54456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224093700}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 4.3, y: -10.1, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54478,13 +54478,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -54780,7 +54780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319598130}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 16.2, y: 36.7, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54802,13 +54802,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -55020,7 +55020,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375555351}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 16.7, y: 21.9, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55042,13 +55042,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -55413,7 +55413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406517560}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 0.9, y: 36.6, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55435,13 +55435,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -55653,7 +55653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429674622}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: -51.4, y: 19.3, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55675,13 +55675,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -55893,7 +55893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456162806}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 26, y: 22, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55915,13 +55915,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -56217,7 +56217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498354262}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 35.4, y: 24.5, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56239,13 +56239,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -56869,7 +56869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631482803}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: 14.7, y: 1.7, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56891,13 +56891,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -57669,7 +57669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819114395}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: -37.5, y: 26.9, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57691,13 +57691,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -57931,13 +57931,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
@@ -58435,7 +58435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968891474}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.2, y: 10.3, z: -0.4}
+  m_LocalPosition: {x: -9.4, y: -10.2, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58457,13 +58457,13 @@ MonoBehaviour:
   lockTransforms: 0
   renderWireFrame: 0
   lightType: 0
-  lightMultiplier: 180.83
+  lightMultiplier: 900
   spotExponent: 161.2
   constantAttenuation: 11.11
   linearAttenuation: -87.4
   quadraticAttenuation: 585.2
   aspect: 2.78
-  slices: 66
+  slices: 20
   colorTint: {r: 0.6117647, g: 0.36862746, b: 0, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
