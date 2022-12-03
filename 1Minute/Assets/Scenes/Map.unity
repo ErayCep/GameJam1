@@ -653,6 +653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 50742708}
   - component: {fileID: 50742707}
+  - component: {fileID: 50742709}
   m_Layer: 0
   m_Name: AudioManager (2)
   m_TagString: Untagged
@@ -771,6 +772,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50742709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50742706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbb0fcbaff7294429c00ec8cc974b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAudioOBJECT: {fileID: 0}
+  shotAudio: {fileID: 0}
+  jumpAudio: {fileID: 0}
+  isGroundAudio: 1
 --- !u!1 &70216389
 GameObject:
   m_ObjectHideFlags: 0
@@ -56112,6 +56129,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7026757345469518980, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.57
+      objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
       value: 50
@@ -56483,7 +56504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201859904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.045372, y: -18.494938, z: 90.90496}
+  m_LocalPosition: {x: -49.47, y: -3.41, z: 90.90496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56741,6 +56762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243045522}
   - component: {fileID: 1243045521}
+  - component: {fileID: 1243045523}
   m_Layer: 0
   m_Name: AudioManager (1)
   m_TagString: Untagged
@@ -56859,6 +56881,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243045523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243045520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbb0fcbaff7294429c00ec8cc974b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAudioOBJECT: {fileID: 0}
+  shotAudio: {fileID: 0}
+  jumpAudio: {fileID: 0}
+  isGroundAudio: 1
 --- !u!1 &1245198351
 GameObject:
   m_ObjectHideFlags: 0
@@ -58016,6 +58054,10 @@ PrefabInstance:
     - target: {fileID: 3912806723106148105, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: maxHealth
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026757345469518980, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.45
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
@@ -60358,7 +60400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765997241}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.4753723, y: -11.1449375, z: 90.90496}
+  m_LocalPosition: {x: 5.87, y: -10.84, z: 90.90496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61884,6 +61926,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 7026757345469518980, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
       value: 50
@@ -62332,6 +62378,10 @@ PrefabInstance:
     - target: {fileID: 7026757346241536687, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026757346520367514, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
