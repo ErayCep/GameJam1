@@ -14,6 +14,8 @@ public class BossHealthController : MonoBehaviour
 
     public BossBattle boss;
 
+    public GameObject AudioEnd;
+    public GameObject AudioStart;
     private void Awake()
     {
         instance = this;
@@ -42,6 +44,9 @@ public class BossHealthController : MonoBehaviour
 
             boss.EndBattle();
             endDoor.SetActive(false);
+            AudioEnd.SetActive(false);
+            AudioStart.SetActive(true);
+           
         }
 
         healthSlider.value = currentHealth;
