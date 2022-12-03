@@ -784,9 +784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbb0fcbaff7294429c00ec8cc974b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAudioOBJECT: {fileID: 0}
-  shotAudio: {fileID: 0}
-  jumpAudio: {fileID: 0}
+  playerAudioOBJECT: {fileID: 1943733492}
+  shotAudio: {fileID: 8300000, guid: 06b16270ea7149f4c8aa9d68f4f0e442, type: 3}
+  jumpAudio: {fileID: 8300000, guid: a27aa537ec44b2d4faa07c72e8238d23, type: 3}
   isGroundAudio: 1
 --- !u!1 &70216389
 GameObject:
@@ -972,7 +972,7 @@ MonoBehaviour:
   modalsonuc: 0
   isDeadEnemy: 0
   enemyHealth: 100
-  damageToPlayer: 30
+  damageToPlayer: 5
   yokolma_time: 1.2
   injurerPlayer: {fileID: 1943733492}
 --- !u!4 &70216396
@@ -53874,6 +53874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 782824541}
+  - component: {fileID: 782824542}
   m_Layer: 0
   m_Name: Boss End Door
   m_TagString: Untagged
@@ -53902,6 +53903,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &782824542
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782824540}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18174553, y: -1.302513}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.363491, y: 3.605026}
+  m_EdgeRadius: 0
 --- !u!1 &820141264
 GameObject:
   m_ObjectHideFlags: 0
@@ -55192,7 +55219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1082691917937834649, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: damageToPlayer
-      value: 30
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1082691917937834651, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: endDoor
@@ -55208,7 +55235,7 @@ PrefabInstance:
       objectReference: {fileID: 1243045520}
     - target: {fileID: 1082691917937834651, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: currentHealth
-      value: 2000
+      value: 1400
       objectReference: {fileID: 0}
     - target: {fileID: 1082691918742840883, guid: a25e30df821754bd29ec79554bd993a7, type: 3}
       propertyPath: m_AnchorMax.x
@@ -56135,7 +56162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
-      value: 50
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: injurerPlayerWalker
@@ -56493,7 +56520,7 @@ MonoBehaviour:
   modalsonuc: 0
   isDeadEnemy: 0
   enemyHealth: 100
-  damageToPlayer: 30
+  damageToPlayer: 5
   yokolma_time: 1.2
   injurerPlayer: {fileID: 1943733492}
 --- !u!4 &1201859911
@@ -56893,9 +56920,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbb0fcbaff7294429c00ec8cc974b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAudioOBJECT: {fileID: 0}
-  shotAudio: {fileID: 0}
-  jumpAudio: {fileID: 0}
+  playerAudioOBJECT: {fileID: 1943733492}
+  shotAudio: {fileID: 8300000, guid: 06b16270ea7149f4c8aa9d68f4f0e442, type: 3}
+  jumpAudio: {fileID: 8300000, guid: a27aa537ec44b2d4faa07c72e8238d23, type: 3}
   isGroundAudio: 1
 --- !u!1 &1245198351
 GameObject:
@@ -58061,7 +58088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
-      value: 50
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: injurerPlayerWalker
@@ -59305,7 +59332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realGold: 0
-  playerHealthStore: 30
+  playerHealthStore: 5
   bulletDamageStore: 3
   bulletBossDamageStore: 1
   ballStore: 0
@@ -60389,7 +60416,7 @@ MonoBehaviour:
   modalsonuc: 0
   isDeadEnemy: 0
   enemyHealth: 100
-  damageToPlayer: 30
+  damageToPlayer: 5
   yokolma_time: 1.2
   injurerPlayer: {fileID: 1943733492}
 --- !u!4 &1765997248
@@ -61419,6 +61446,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 277716769}
+    - target: {fileID: 1609707599, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
+      propertyPath: playerHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6499128965572256179, guid: 462291b663fd949d69a827aa60a12b22, type: 3}
       propertyPath: m_Name
       value: Player
@@ -61932,7 +61963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
-      value: 50
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: injurerPlayerWalker
@@ -62325,7 +62356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: damageToPlayer
-      value: 50
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7026757346241536682, guid: 9163f1c9099ae4406ac978fc202cc1d2, type: 3}
       propertyPath: injurerPlayerWalker
